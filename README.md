@@ -22,7 +22,7 @@ A core aspect of smart food labeling is the meticulous analysis of the ingredien
 
 ## How This Will Go Down
 1. Ingredient Side:
-    1.1 Take the food we are interested in, and run LangModel.py on it.
+    1.1 Take the ingredient list photo of the food we are interested in, and run LangModel.py on it.
     1.2 This will show GPT's rating of the food based on the ingredient list
 2. Nutrition Side
     2.1 Gather lots of food label pictures from the website (https://www.ewg.org/foodscores/products/888849006045-QuestProteinCookiePeanutButter/) or in person
