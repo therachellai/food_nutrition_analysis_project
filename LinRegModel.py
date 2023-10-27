@@ -20,6 +20,13 @@ Returns:
 class LinearRegressionModel:
     def __init__(self, data):
         self.data = data
+        
+    """
+    # Regularization
+    def __init__(self, data, alpha=1.0):
+        self.data = data
+        self.alpha = alpha 
+    """
 
     def split_data(self, test_size=0.2, random_state=None):
         X = self.data[['Protein', 'Fat', 'Carbs', 'Trans Fat']]
