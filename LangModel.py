@@ -16,21 +16,27 @@ using keywords from LM.
 def author():
     return 'Rachel Yu-Wei Lai'
 
-# Set your API key
-api_key = "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"
+def language_model(ingredients):
+    # Set your API key
+    api_key = "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"
 
-# Define your prompt (the text you want to provide as input)
-prompt = "Give the Quest Protein Cookie, Peanut Butter a rating out of 10in terms of healthy level, based on ingredient list alone'"
+    # Define your prompt (the text you want to provide as input)
+    prompt = f"Give this food a rating out of 10 in terms of healthy level, based on the below ingredient list alone: {ingredients}"
 
-# Make an API request
-response = openai.Completion.create(
-    engine="text-davinci-002",  # You can specify different engines depending on your needs.
-    prompt=prompt,
-    max_tokens=50,  # Adjust the response length as needed.
-    api_key=api_key
-)
+    # Make an API request
+    response = openai.Completion.create(
+        engine="text-davinci-002",  # You can specify different engines depending on your needs.
+        prompt=prompt,
+        max_tokens=50,  # Adjust the response length as needed.
+        api_key=api_key
+    )
 
-# Get the generated response
-answer = response.choices[0].text
+    # Get the generated response
+    answer = response.choices[0].text
 
-print("Answer:", answer)
+    print("Answer:", answer)
+    
+    return answer
+
+###########################################################
+if __name__ == "__main__":
