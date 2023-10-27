@@ -19,7 +19,11 @@ Returns:
 
 class LinearRegressionModel:
     def author():
-        return 'Rachel Yu-Wei Lai'
+        """
+        Returns:
+        author name in list
+        """
+        return ['Rachel Yu-Wei Lai']
 
     def __init__(self, data):
         self.data = data

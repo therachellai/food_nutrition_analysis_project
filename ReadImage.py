@@ -6,7 +6,11 @@ import easyocr
 
 
 def author():
-    return 'Rachel Yu-Wei Lai'
+    """
+    Returns:
+       author name in list
+    """
+    return ['Rachel Yu-Wei Lai']
 
 ###########################################################
 def read_text(file_name: str):
@@ -45,15 +49,28 @@ def convert_image_to_pdf():
     return
 
 def extract_info_from_string(text: str):
-    """Using the text output from read_text function, extract info and convert it into a 
+    """
+    Using the text output from read_text function, extract info and convert it into a 
     pandas df. Each time we run the read_text function, the output will become one row in 
     the final df. The idea is to get ~200 entries/rows (aka food items) in our database. 
     Maybe store the data in AWS or snowflake? Let me know what you guys think.
-    
-    Args:
-        text (str): _description_
+    ------------------
+    Parameters: text in str
+    ------------------
+    Returns: single-row table with columns as features in pd.DataFrame
     """
     pass
+
+def add_name_and_score(df: pd.DataFrame):
+    """
+    Add name of food and score from the website: 
+    https://www.ewg.org/foodscores/products/888849006045-QuestProteinCookiePeanutButter/
+    ------------------
+    Parameters: single-row info table in pd.DataFrame
+    ------------------
+    Returns: single-row table with columns as features, name, and score in pd.DataFrame
+    """
+    return
 
 ###########################################################
 if __name__ == "__main__":

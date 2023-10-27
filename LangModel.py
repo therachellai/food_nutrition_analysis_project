@@ -14,7 +14,11 @@ using keywords from LM.
 """
 
 def author():
-    return 'Rachel Yu-Wei Lai'
+    """
+    Returns:
+       author name in list
+    """
+    return ['Rachel Yu-Wei Lai']
 
 def language_model(ingredients):
     # Set your API key

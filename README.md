@@ -18,6 +18,7 @@ A core aspect of smart food labeling is the meticulous analysis of the ingredien
 6. pip install pillow       # for converting image to pdf
 7. pip install scikit-learn     # for training machine learning models
 8. pip install openai       # for LM
+9. pip install streamlit    # for visualization
 
 ## How This Will Go Down
 1. Ingredient Side:
