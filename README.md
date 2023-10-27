@@ -10,7 +10,7 @@ A core aspect of smart food labeling is the meticulous analysis of the ingredien
 
 ## How to Run
 
-1. Create folders named "OUTPUTS" and "INPUTS".
+1. Create folders named "OUTPUTS" and "INPUTS" (unless they are already there).
 2. Store the interested image in the "INPUTS" folder
 3. pip install easyOCR
 4. pip install tabula
