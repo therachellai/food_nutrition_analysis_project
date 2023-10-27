@@ -46,5 +46,5 @@ def convert_image_to_pdf():
 
 ###########################################################
 if __name__ == "__main__":
-    convert_image_to_pdf()
+    # convert_image_to_pdf()
     read_text('foodlabel.png')

@@ -12,10 +12,11 @@ A core aspect of smart food labeling is the meticulous analysis of the ingredien
 
 1. Create folders named "OUTPUTS" and "INPUTS" (unless they are already there).
 2. Store the interested image in the "INPUTS" folder
-3. pip install easyOCR
+3. pip install easyOCR      # for OCR
 4. pip install tabula
-5. pip install pandas
-6. pip install pillow
+5. pip install pandas       # for data analysis
+6. pip install pillow       # for converting image to pdf
+7. pip install scikit-learn     # for training machine learning models
 
 # Clean Code and Logistics
 
