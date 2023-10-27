@@ -44,7 +44,19 @@ def convert_image_to_pdf():
             image_converted.save(os.path.join(output_dir, '{0}.pdf'.format(file.split('.')[-2])))
     return
 
+def extract_info_from_string(text: str):
+    """Using the text output from read_text function, extract info and convert it into a 
+    pandas df. Each time we run the read_text function, the output will become one row in 
+    the final df. The idea is to get ~200 entries/rows (aka food items) in our database. 
+    Maybe store the data in AWS or snowflake? Let me know what you guys think.
+    
+    Args:
+        text (str): _description_
+    """
+    pass
+
 ###########################################################
 if __name__ == "__main__":
     # convert_image_to_pdf()
-    read_text('foodlabel.png')
+    text = read_text('foodlabel.png')
+    extract_info_from_string(text)
