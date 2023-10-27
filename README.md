@@ -18,6 +18,24 @@ A core aspect of smart food labeling is the meticulous analysis of the ingredien
 6. pip install pillow       # for converting image to pdf
 7. pip install scikit-learn     # for training machine learning models
 
+## How This Will Go Down
+1. Ingredient Side:
+    1.1 Take the food we are interested in, and run LangModel.py on it.
+    1.2 This will show GPT's rating of the food based on the ingredient list
+2. Nutrition Side
+    2.1 Gather lots of food label pictures from the website (https://www.ewg.org/foodscores/products/888849006045-QuestProteinCookiePeanutButter/) or in person
+    2.2 Run them through ReadImage.py to get text, which in the same file, can have its info extracted and put
+        into a single-row dataFrame. Using the same file, add another column of "score", which can be found on
+        the website.
+    2.3 Run CleanData on all the df entries from the pdf to concatenate them to a large df
+    2.4 Run LinRegModel (and possibly other models in the future) using the df we have gotten from the previous step.
+        Test model accuracy and efficiency. Finetune it. Then make predictions.
+3. Putting It Together
+    3.1 Conduct user centered research on our own time
+    3.2 Run VisualizeData, which uses the streamlit framework to visualize data we have collected from users and 
+        the models
+        (streamlit run VisualizeData.py)
+
 # Clean Code and Logistics
 
 1. Please add your name to the author() method or implement a new one if it is something you are working on.
