@@ -13,6 +13,9 @@ threshold, we label it as bad. If we have time, we can do allergens too
 using keywords from LM.
 """
 
+def author():
+    return 'Rachel Yu-Wei Lai'
+
 # Set your API key
 api_key = "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"
 

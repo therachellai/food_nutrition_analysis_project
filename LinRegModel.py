@@ -18,6 +18,9 @@ Returns:
 """
 
 class LinearRegressionModel:
+    def author():
+        return 'Rachel Yu-Wei Lai'
+
     def __init__(self, data):
         self.data = data
         
