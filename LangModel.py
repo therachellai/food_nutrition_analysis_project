@@ -40,3 +40,5 @@ def language_model(ingredients):
 
 ###########################################################
 if __name__ == "__main__":
+    ingredients = '' # read in results from OCR
+    language_model(ingredients)
