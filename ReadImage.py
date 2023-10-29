@@ -13,7 +13,7 @@ def author():
     return ['Rachel Yu-Wei Lai']
 
 ###########################################################
-def read_text(file_name: str):
+def read_text(file_name: str) -> list:
     """
     This function uses easyocr, and OCR framework to read text from a file, given the 
     file name.
@@ -21,16 +21,17 @@ def read_text(file_name: str):
     Parameters: 
     file_name: file name in str, currently called foodlabel.png, subject to future changes
     ------------------
-    Returns: text in str
+    Returns: text in list
     """
     source_dir = 'INPUTS'
     file_name = 'foodlabel.png'
     reader = easyocr.Reader(['en'])
     text = reader.readtext(f'{source_dir}/{file_name}', detail = 0, text_threshold=0.7)
     print(text)
+    print(type(text))
     return text
         
-def convert_image_to_pdf():
+def convert_image_to_pdf() -> None:
     """
     This function converts all png, jpg, or jpeg images files to PDF for better processing 
     in the future.
@@ -48,7 +49,7 @@ def convert_image_to_pdf():
             image_converted.save(os.path.join(output_dir, '{0}.pdf'.format(file.split('.')[-2])))
     return
 
-def extract_info_from_string(text: str):
+def extract_info_from_string(text: str) -> pd.DataFrame:
     """
     Using the text output from read_text function, extract info and convert it into a 
     pandas df. Each time we run the read_text function, the output will become one row in 
@@ -61,7 +62,7 @@ def extract_info_from_string(text: str):
     """
     pass
 
-def add_name_and_score(df: pd.DataFrame):
+def add_name_and_score(df: pd.DataFrame) -> pd.DataFrame:
     """
     Add name of food and score from the website: 
     https://www.ewg.org/foodscores/products/888849006045-QuestProteinCookiePeanutButter/

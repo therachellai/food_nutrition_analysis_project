@@ -8,17 +8,29 @@ Smart food labeling provides a comprehensive breakdown of the nutritional inform
 
 A core aspect of smart food labeling is the meticulous analysis of the ingredients employed in food products. The AI system scrutinizes the extracted ingredients list, cross-referencing it against an extensive database of recognized ingredients. This analysis aids in identifying specific components, including allergens, additives, preservatives, or artificial sweeteners that may be present in the product. This level of transparency empowers consumers to quickly ascertain whether a product aligns with their dietary needs or restrictions.
 
+## How to install virtual environments
+1. Install Anaconda/miniconda
+2. If creating VM for the first time
+'''conda env create -f environment.yml'''
+3. Activate VM:
+'''conda activate food_nutrition_analysis'''
+4. Every time you install a package, you are OBLIGED to update environment.yml:
+First, google whether condas has this package; if so,  use conda to install 
+'conda install xxx', if not, install pip in your conda, and use the path to your pip (for example, mine is '/Users/rachellai/miniconda3/envs/food_nutrition_analysis/bin/pip') install to install the package
+5. Update environment.yml
+'''conda env export | grep -v "^prefix: " > environment.yml'''
+6. if a conda env already exists, update existing conda env from updated yml: 
+'''
+conda activate {myenv}
+conda env update --file environment.yml --prune
+'''
+7. If you want to exit the VM:
+'''conda deactivate'''
+
 ## How to Run
 
 1. Create folders named "OUTPUTS" and "INPUTS" (unless they are already there).
 2. Store the interested image in the "INPUTS" folder
-3. pip install easyOCR      # for OCR
-4. pip install tabula
-5. pip install pandas       # for data analysis
-6. pip install pillow       # for converting image to pdf
-7. pip install scikit-learn     # for training machine learning models
-8. pip install openai       # for LM
-9. pip install streamlit    # for visualization
 
 ## How This Will Go Down
 1. Ingredient Side:

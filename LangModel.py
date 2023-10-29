@@ -21,7 +21,7 @@ def author():
     """
     return ['Rachel Yu-Wei Lai']
 
-def language_model(file_name):
+def language_model_ingredients(file_name: str) -> str:
     """
     This function takes in a file name of ingredient list, reads the text, then enters the
     info for the language model to evaluate, which will end up producing a score.
@@ -56,5 +56,5 @@ def language_model(file_name):
 
 ###########################################################
 if __name__ == "__main__":
-    file_name = ''
-    language_model(file_name)
+    file_name_ingredients = ''
+    language_model_ingredients(file_name_ingredients)
