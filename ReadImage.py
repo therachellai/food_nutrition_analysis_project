@@ -28,7 +28,6 @@ def read_text(file_name: str) -> list:
     reader = easyocr.Reader(['en'])
     text = reader.readtext(f'{source_dir}/{file_name}', detail = 0, text_threshold=0.7)
     print(text)
-    print(type(text))
     return text
         
 def convert_image_to_pdf() -> None:
@@ -59,6 +58,16 @@ def extract_info_from_string(text: str) -> pd.DataFrame:
     Parameters: text in str
     ------------------
     Returns: single-row table with columns as features in pd.DataFrame
+    """
+    """ 
+    features: 
+    Calories from added sugar/total calories
+    Calories from fat/total calories
+    Calories from protein/total calories
+    Calories from carbs/total calories
+    Calories from saturated fat/total calories
+    Calories from trans fat/total calories
+    more to be added
     """
     pass
 
