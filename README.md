@@ -11,21 +11,20 @@ A core aspect of smart food labeling is the meticulous analysis of the ingredien
 ## How to install virtual environments
 1. Install Anaconda/miniconda
 2. If creating VM for the first time
-'''conda env create -f environment.yml'''
+`conda env create -f environment.yml`
 3. Activate VM:
-'''conda activate food_nutrition_analysis'''
+`conda activate food_nutrition_analysis`
 4. Every time you install a package, you are OBLIGED to update environment.yml:
 First, google whether condas has this package; if so,  use conda to install 
-'conda install xxx', if not, install pip in your conda, and use the path to your pip (for example, mine is '/Users/rachellai/miniconda3/envs/food_nutrition_analysis/bin/pip') install to install the package
+`conda install xxx`, if not, install pip in your conda, and use the path to your pip (for example, mine is '/Users/rachellai/miniconda3/envs/food_nutrition_analysis/bin/pip') install to install the package
 5. Update environment.yml
-'''conda env export | grep -v "^prefix: " > environment.yml'''
+`conda env export | grep -v "^prefix: " > environment.yml`
 6. if a conda env already exists, update existing conda env from updated yml: 
-'''
-conda activate {myenv}
-conda env update --file environment.yml --prune
-'''
+`conda activate {myenv}`
+`conda env update --file environment.yml --prune`
+
 7. If you want to exit the VM:
-'''conda deactivate'''
+```conda deactivate```
 
 ## How to Run
 
