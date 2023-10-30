@@ -25,9 +25,15 @@ def read_text(file_name: str) -> list:
     Returns: text in list
     """
     source_dir = 'INPUTS'
+<<<<<<< HEAD
     file_name = 'foodlabel.png'
     reader = easyocr.Reader(['en'])
     text = reader.readtext(f'{source_dir}/{file_name}', detail = 0, text_threshold=0.7)
+=======
+    file_name = 'foodlabel.png' if file_name == None else file_name
+    reader = easyocr.Reader(['ch_sim','en'])
+    text = reader.readtext(f'{source_dir}/{file_name}', detail = 0)
+>>>>>>> ee5640d (add detect nutrition)
     print(text)
     return text
         
@@ -146,24 +152,44 @@ def capture_image_with_webcam() -> str:
             break
         cv2.imshow("Capturing image", frame)
 
-        k = cv2.waitKey(1)
-        if k%256 == 27:
+        key = cv2.waitKey(1)
+        if key % 256 == 27:
             # ESC pressed
             print("Escape hit, closing...")
             break
-        elif k%256 == 32:
+        elif key % 256 == 32:
             # SPACE pressed
             img_name = f"food_img_{now}.png"
-            cv2.imwrite(f"./INPUTS/{img_name}", frame)
-            print(f"{img_name} written!")
+            path = f"./INPUTS/{img_name}"
+            cv2.imwrite(path, frame)
+            if check_is_nutrition_img(img_name):
+                print(f"{img_name} written!")
+                break
+            else:
+                os.remove(path)
+                print(f"{img_name} is not a nutrition facts! please take picture of a nutrition facts")
+                continue
 
     cam.release()
 
     cv2.destroyAllWindows()
     return f"./INPUTS/{img_name}"
+
+def check_is_nutrition_img(file_name: str = "foodlabel.png") -> bool:
+    """
+    Check if image contains nutrition facts
+    ------------------
+    Parameters: img path
+    ------------------
+    Returns: boolean
+    """
+    texts = read_text(file_name)
+    print("Nutrition Facts" in texts)
+    return "Nutrition Facts" in texts
 ###########################################################
 if __name__ == "__main__":
     # convert_image_to_pdf()
     # text = read_text('foodlabel.png')
     # extract_info_from_string(text)
     capture_image_with_webcam()
+    # check_is_nutrition_img("food_img_2023-10-28T23:58:53.487640.png")
