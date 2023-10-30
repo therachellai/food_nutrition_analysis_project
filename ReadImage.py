@@ -14,7 +14,7 @@ def author():
     return ['Rachel Yu-Wei Lai', "Simon Cheng-Wei Huang"]
 
 ###########################################################
-def read_text(file_name: str) -> list:
+def read_text(file_name: str = "foodlabel.png") -> list:
     """
     This function uses easyocr, and OCR framework to read text from a file, given the 
     file name.
@@ -25,15 +25,10 @@ def read_text(file_name: str) -> list:
     Returns: text in list
     """
     source_dir = 'INPUTS'
-<<<<<<< HEAD
     file_name = 'foodlabel.png'
     reader = easyocr.Reader(['en'])
     text = reader.readtext(f'{source_dir}/{file_name}', detail = 0, text_threshold=0.7)
-=======
-    file_name = 'foodlabel.png' if file_name == None else file_name
-    reader = easyocr.Reader(['ch_sim','en'])
-    text = reader.readtext(f'{source_dir}/{file_name}', detail = 0)
->>>>>>> ee5640d (add detect nutrition)
+
     print(text)
     return text
         
@@ -184,8 +179,11 @@ def check_is_nutrition_img(file_name: str = "foodlabel.png") -> bool:
     Returns: boolean
     """
     texts = read_text(file_name)
-    print("Nutrition Facts" in texts)
-    return "Nutrition Facts" in texts
+
+    # TODO: 
+    # use a better algorithm to do the check after the data cleaning function is done
+    print("Nutrition" in texts or "Nutrition Facts" in texts)
+    return "Nutrition" in texts or "Nutrition Facts" in texts
 ###########################################################
 if __name__ == "__main__":
     # convert_image_to_pdf()
