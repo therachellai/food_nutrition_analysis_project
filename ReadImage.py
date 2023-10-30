@@ -3,14 +3,15 @@ import pandas as pd
 import os
 from PIL import Image
 import easyocr
-
+import cv2
+from datetime import datetime
 
 def author():
     """
     Returns:
        author name in list
     """
-    return ['Rachel Yu-Wei Lai']
+    return ['Rachel Yu-Wei Lai', "Simon Cheng-Wei Huang"]
 
 ###########################################################
 def read_text(file_name: str) -> list:
@@ -123,9 +124,46 @@ def add_name_and_score(df: pd.DataFrame) -> pd.DataFrame:
     """
     return
 
+def capture_image_with_webcam() -> str:
+    """
+    Open a webcam with OpenCV, then press s to capture image
+    ------------------
+    Parameters: None
+    ------------------
+    Returns: path of the image
+    """
+    cam = cv2.VideoCapture(0)
+
+    cv2.namedWindow("Capturing image")
+
+    img_name = ""
+
+    while True:
+        now = datetime.now().isoformat()
+        ret, frame = cam.read()
+        if not ret:
+            print("failed to grab frame")
+            break
+        cv2.imshow("Capturing image", frame)
+
+        k = cv2.waitKey(1)
+        if k%256 == 27:
+            # ESC pressed
+            print("Escape hit, closing...")
+            break
+        elif k%256 == 32:
+            # SPACE pressed
+            img_name = f"food_img_{now}.png"
+            cv2.imwrite(f"./INPUTS/{img_name}", frame)
+            print(f"{img_name} written!")
+
+    cam.release()
+
+    cv2.destroyAllWindows()
+    return f"./INPUTS/{img_name}"
 ###########################################################
 if __name__ == "__main__":
     # convert_image_to_pdf()
-    text = read_text('foodlabel.png')
-    print(extract_info_from_text(text, 'food1'))
-    convert_info_to_df(extract_info_from_text(text, 'food1')).to_csv('OUTPUTS/test.csv')
+    # text = read_text('foodlabel.png')
+    # extract_info_from_string(text)
+    capture_image_with_webcam()
