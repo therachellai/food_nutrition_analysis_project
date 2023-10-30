@@ -48,7 +48,7 @@ def convert_image_to_pdf() -> None:
             image_converted.save(os.path.join(output_dir, '{0}.pdf'.format(file.split('.')[-2])))
     return
 
-def extract_info_from_string(text: str) -> pd.DataFrame:
+def extract_info_from_text(text: list) -> dict:
     """
     Using the text output from read_text function, extract info and convert it into a 
     pandas df. Each time we run the read_text function, the output will become one row in 
@@ -69,6 +69,34 @@ def extract_info_from_string(text: str) -> pd.DataFrame:
     Calories from trans fat/total calories
     more to be added
     """
+    nutrition_map = {}
+    for i in range(len(text)):
+        if text[i] == 'Calories':
+            nutrition_map['Calories'] = int(text[i+1])
+            continue
+        if 'Total Fat' in text[i]:
+            nutrition_map['Total Fat'] = int(text[i].split(' ')[-1][:(len(text[i]) - 1)][:-1])
+            continue
+        if 'Saturated Fat' in text[i]:
+            nutrition_map['Saturated Fat'] = float(text[i].split(' ')[-1][:(len(text[i]) - 1)][:-1])
+            continue
+        if 'Trans Fat' in text[i]:
+            tmp = text[i].split(' ')[-1][:(len(text[i]) - 1)][:-1]
+            tmp = 0 if tmp == 'O' else int(tmp)
+            nutrition_map['Trans Fat'] = tmp
+            continue
+        if 'Total Carbohydrate' in text[i]:
+            nutrition_map['Total Carbohydrate'] = int(text[i].split(' ')[-1][:(len(text[i]) - 1)][:-1])
+            continue
+        if 'Added Sugar' in text[i]:
+            nutrition_map['Added Sugar'] = int(text[i].split(' ')[-3][:(len(text[i]) - 3)][:-1])
+            continue
+        if 'Protein' in text[i]:
+            nutrition_map['Protein'] = int(text[i+1][:-1])
+            continue
+    return nutrition_map
+
+def convert_info_to_df(d: dict)-> pd.DataFrame:
     pass
 
 def add_name_and_score(df: pd.DataFrame) -> pd.DataFrame:
@@ -86,4 +114,5 @@ def add_name_and_score(df: pd.DataFrame) -> pd.DataFrame:
 if __name__ == "__main__":
     # convert_image_to_pdf()
     text = read_text('foodlabel.png')
-    extract_info_from_string(text)
+    print(extract_info_from_text(text))
+    convert_info_to_df(extract_info_from_text(text))
