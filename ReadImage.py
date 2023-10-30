@@ -3,17 +3,18 @@ import pandas as pd
 import os
 from PIL import Image
 import easyocr
-
+import cv2
+from datetime import datetime
 
 def author():
     """
     Returns:
        author name in list
     """
-    return ['Rachel Yu-Wei Lai']
+    return ['Rachel Yu-Wei Lai', "Simon Cheng-Wei Huang"]
 
 ###########################################################
-def read_text(file_name: str) -> list:
+def read_text(file_name: str = "foodlabel.png") -> list:
     """
     This function uses easyocr, and OCR framework to read text from a file, given the 
     file name.
@@ -27,6 +28,7 @@ def read_text(file_name: str) -> list:
     file_name = 'foodlabel.png'
     reader = easyocr.Reader(['en'])
     text = reader.readtext(f'{source_dir}/{file_name}', detail = 0, text_threshold=0.7)
+
     print(text)
     return text
         
@@ -123,9 +125,69 @@ def add_name_and_score(df: pd.DataFrame) -> pd.DataFrame:
     """
     return
 
+def capture_image_with_webcam() -> str:
+    """
+    Open a webcam with OpenCV, then press s to capture image
+    ------------------
+    Parameters: None
+    ------------------
+    Returns: path of the image
+    """
+    cam = cv2.VideoCapture(0)
+
+    cv2.namedWindow("Capturing image")
+
+    img_name = ""
+
+    while True:
+        now = datetime.now().isoformat()
+        ret, frame = cam.read()
+        if not ret:
+            print("failed to grab frame")
+            break
+        cv2.imshow("Capturing image", frame)
+
+        key = cv2.waitKey(1)
+        if key % 256 == 27:
+            # ESC pressed
+            print("Escape hit, closing...")
+            break
+        elif key % 256 == 32:
+            # SPACE pressed
+            img_name = f"food_img_{now}.png"
+            path = f"./INPUTS/{img_name}"
+            cv2.imwrite(path, frame)
+            if check_is_nutrition_img(img_name):
+                print(f"{img_name} written!")
+                break
+            else:
+                os.remove(path)
+                print(f"{img_name} is not a nutrition facts! please take picture of a nutrition facts")
+                continue
+
+    cam.release()
+
+    cv2.destroyAllWindows()
+    return f"./INPUTS/{img_name}"
+
+def check_is_nutrition_img(file_name: str = "foodlabel.png") -> bool:
+    """
+    Check if image contains nutrition facts
+    ------------------
+    Parameters: img path
+    ------------------
+    Returns: boolean
+    """
+    texts = read_text(file_name)
+
+    # TODO: 
+    # use a better algorithm to do the check after the data cleaning function is done
+    print("Nutrition" in texts or "Nutrition Facts" in texts)
+    return "Nutrition" in texts or "Nutrition Facts" in texts
 ###########################################################
 if __name__ == "__main__":
     # convert_image_to_pdf()
-    text = read_text('foodlabel.png')
-    print(extract_info_from_text(text, 'food1'))
-    convert_info_to_df(extract_info_from_text(text, 'food1')).to_csv('OUTPUTS/test.csv')
+    # text = read_text('foodlabel.png')
+    # extract_info_from_string(text)
+    capture_image_with_webcam()
+    # check_is_nutrition_img("food_img_2023-10-28T23:58:53.487640.png")
