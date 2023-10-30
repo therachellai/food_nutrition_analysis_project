@@ -48,14 +48,16 @@ def convert_image_to_pdf() -> None:
             image_converted.save(os.path.join(output_dir, '{0}.pdf'.format(file.split('.')[-2])))
     return
 
-def extract_info_from_text(text: list) -> dict:
+def extract_info_from_text(text: list, name: str) -> dict:
     """
     Using the text output from read_text function, extract info and convert it into a 
     pandas df. Each time we run the read_text function, the output will become one row in 
     the final df. The idea is to get ~200 entries/rows (aka food items) in our database. 
     Maybe store the data in AWS or snowflake? Let me know what you guys think.
     ------------------
-    Parameters: text in str
+    Parameters: 
+    text: text in str
+    name: name of food in str
     ------------------
     Returns: single-row table with columns as features in pd.DataFrame
     """
@@ -70,6 +72,7 @@ def extract_info_from_text(text: list) -> dict:
     more to be added
     """
     nutrition_map = {}
+    nutrition_map['Name'] = name
     for i in range(len(text)):
         if text[i] == 'Calories':
             nutrition_map['Calories'] = int(text[i+1])
@@ -97,7 +100,17 @@ def extract_info_from_text(text: list) -> dict:
     return nutrition_map
 
 def convert_info_to_df(d: dict)-> pd.DataFrame:
-    pass
+    nutrition_map = {}
+    nutrition_map['Name'] = d['Name']
+    nutrition_map['Calories from Added Sugar vs Total Calories'] = round(d['Added Sugar'] * 4 / d['Calories'], 4)
+    nutrition_map['Calories from Fat vs Total Calories'] = round(d['Total Fat'] * 9 / d['Calories'], 4)
+    nutrition_map['Calories from Protein vs Total Calories'] = round(d['Protein'] * 4 / d['Calories'], 4)
+    nutrition_map['Calories from Carbohydrates vs Total Calories'] = round(d['Total Carbohydrate'] * 4 / d['Calories'], 4)
+    nutrition_map['Calories from Saturated Fat vs Total Calories'] = round(d['Saturated Fat'] * 9 / d['Calories'], 4)
+    nutrition_map['Calories from Trans Fat vs Total Calories'] = round(d['Trans Fat'] * 9 / d['Calories'], 4)
+    res = pd.DataFrame(nutrition_map, index=['Row1'])
+    print(res)
+    return res
 
 def add_name_and_score(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -114,5 +127,5 @@ def add_name_and_score(df: pd.DataFrame) -> pd.DataFrame:
 if __name__ == "__main__":
     # convert_image_to_pdf()
     text = read_text('foodlabel.png')
-    print(extract_info_from_text(text))
-    convert_info_to_df(extract_info_from_text(text))
+    print(extract_info_from_text(text, 'food1'))
+    convert_info_to_df(extract_info_from_text(text, 'food1')).to_csv('OUTPUTS/test.csv')
