@@ -3,6 +3,7 @@ import pandas as pd
 import os
 from PIL import Image
 import easyocr
+import uuid
 
 
 def author():
@@ -102,13 +103,19 @@ def extract_info_from_text(text: list, name: str) -> dict:
 def convert_info_to_df(d: dict)-> pd.DataFrame:
     nutrition_map = {}
     nutrition_map['Name'] = d['Name']
-    nutrition_map['Calories from Added Sugar vs Total Calories'] = round(d['Added Sugar'] * 4 / d['Calories'], 4)
-    nutrition_map['Calories from Fat vs Total Calories'] = round(d['Total Fat'] * 9 / d['Calories'], 4)
-    nutrition_map['Calories from Protein vs Total Calories'] = round(d['Protein'] * 4 / d['Calories'], 4)
-    nutrition_map['Calories from Carbohydrates vs Total Calories'] = round(d['Total Carbohydrate'] * 4 / d['Calories'], 4)
-    nutrition_map['Calories from Saturated Fat vs Total Calories'] = round(d['Saturated Fat'] * 9 / d['Calories'], 4)
-    nutrition_map['Calories from Trans Fat vs Total Calories'] = round(d['Trans Fat'] * 9 / d['Calories'], 4)
-    res = pd.DataFrame(nutrition_map, index=['Row1'])
+    # Calories from Added Sugar vs Total Calories
+    nutrition_map['suga_to_total'] = round(d['Added Sugar'] * 4 / d['Calories'], 4)
+    # Calories from Fat vs Total Calories
+    nutrition_map['fat_to_total'] = round(d['Total Fat'] * 9 / d['Calories'], 4)
+    # Calories from Protein vs Total Calories
+    nutrition_map['pro_to_total'] = round(d['Protein'] * 4 / d['Calories'], 4)
+    # Calories from Carbohydrates vs Total Calories
+    nutrition_map['carb_to_total'] = round(d['Total Carbohydrate'] * 4 / d['Calories'], 4)
+    # Calories from Saturated Fat vs Total Calories
+    nutrition_map['satu_to_total'] = round(d['Saturated Fat'] * 9 / d['Calories'], 4)
+    # Calories from Trans Fat vs Total Calories
+    nutrition_map['tran_to_total'] = round(d['Trans Fat'] * 9 / d['Calories'], 4)
+    res = pd.DataFrame(nutrition_map, index=[str(uuid.uuid4())])
     print(res)
     return res
 
