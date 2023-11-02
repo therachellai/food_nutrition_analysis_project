@@ -1,2 +1,2 @@
-,Name,Calories from Added Sugar vs Total Calories,Calories from Fat vs Total Calories,Calories from Protein vs Total Calories,Calories from Carbohydrates vs Total Calories,Calories from Saturated Fat vs Total Calories,Calories from Trans Fat vs Total Calories
-Row1,food1,0.0333,0.15,0.1833,0.7667,0.0563,0.0
+,name,add_sugar_calories_percentage,fat_calories_percentage,protein_calories_percentage,carbohydrates_calories_percentage,saturated_fat_calories_percentage,trans_fat_calories_percentage
+Row2,food2,0.0334,0.15,0.1833,0.7667,0.0563,0.0

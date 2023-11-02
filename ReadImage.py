@@ -101,13 +101,13 @@ def extract_info_from_text(text: list, name: str) -> dict:
 
 def convert_info_to_df(d: dict)-> pd.DataFrame:
     nutrition_map = {}
-    nutrition_map['Name'] = d['Name']
-    nutrition_map['Calories from Added Sugar vs Total Calories'] = round(d['Added Sugar'] * 4 / d['Calories'], 4)
-    nutrition_map['Calories from Fat vs Total Calories'] = round(d['Total Fat'] * 9 / d['Calories'], 4)
-    nutrition_map['Calories from Protein vs Total Calories'] = round(d['Protein'] * 4 / d['Calories'], 4)
-    nutrition_map['Calories from Carbohydrates vs Total Calories'] = round(d['Total Carbohydrate'] * 4 / d['Calories'], 4)
-    nutrition_map['Calories from Saturated Fat vs Total Calories'] = round(d['Saturated Fat'] * 9 / d['Calories'], 4)
-    nutrition_map['Calories from Trans Fat vs Total Calories'] = round(d['Trans Fat'] * 9 / d['Calories'], 4)
+    nutrition_map['name'] = d['Name']
+    nutrition_map['add_sugar_calories_percentage'] = round(d['Added Sugar'] * 4 / d['Calories'], 4)
+    nutrition_map['fat_calories_percentage'] = round(d['Total Fat'] * 9 / d['Calories'], 4)
+    nutrition_map['protein_calories_percentage'] = round(d['Protein'] * 4 / d['Calories'], 4)
+    nutrition_map['carbohydrates_calories_percentage'] = round(d['Total Carbohydrate'] * 4 / d['Calories'], 4)
+    nutrition_map['saturated_fat_calories_percentage'] = round(d['Saturated Fat'] * 9 / d['Calories'], 4)
+    nutrition_map['trans_fat_calories_percentage'] = round(d['Trans Fat'] * 9 / d['Calories'], 4)
     res = pd.DataFrame(nutrition_map, index=['Row1'])
     print(res)
     return res
