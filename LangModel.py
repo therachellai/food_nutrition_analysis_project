@@ -1,5 +1,5 @@
 import openai
-from ReadImage import read_text
+from CollectData import read_text
 
 """
 This is a draft as well (mostly from GPT itself); I haven't made the payment, 
