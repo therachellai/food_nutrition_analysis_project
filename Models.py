@@ -1,8 +1,12 @@
 import os
-from dotenv import load_dotenv
 import boto3
 import time
 import pandas as pd
+from botocore.exceptions import NoCredentialsError
+from dotenv import load_dotenv
+import datetime
+
+
 
 
 def author():
@@ -20,12 +24,14 @@ AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY")
 AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 AWS_DEFAULT_REGION = os.getenv("AWS_DEFAULT_REGION")
 
-athena_client = boto3.client(
-    'athena',
+session = boto3.session.Session(
     region_name = AWS_DEFAULT_REGION,
     aws_access_key_id = AWS_ACCESS_KEY,
     aws_secret_access_key = AWS_SECRET_ACCESS_KEY
 )
+
+athena_client = session.client('athena')
+s3_client = session.client('s3')
 
 # Define your query and output location
 query_string = "SELECT * FROM food_nutrition_analysis.food_nutrition_table LIMIT 10"
@@ -39,9 +45,8 @@ def is_query_still_running(query_execution_id):
     ------------------
     Returns: a boolean value, True means the query is still running, and if the query is done, it'll return False.
     """
-    # Get the status of the query execution
     response = athena_client.get_query_execution(QueryExecutionId = query_execution_id)
-    # Check the QueryExecutionStatus
+
     state = response['QueryExecution']['Status']['State']
     return state in ['QUEUED', 'RUNNING']
 
@@ -99,9 +104,33 @@ def query_from_athena(query = query_string):
     df = response_to_df(result)
     return df
 
+def upload_food_nutrition_csv(file_path, bucket = "food-nutrition-analysis-5002", object_name = None):
+    """
+    upload files to s3
+    ------------------
+    Parameters: 
+        - file_name: the local path of the file you want to upload
+        - bucket: the bucket you want to store the data in.
+        - object_name: what name do you wish the file be stored
+    ------------------
+    Returns: a boolean value. True means upload succeed, and False means upload failed
+    """
+    # If S3 object_name was not specified, use now time
+    if object_name is None:
+        object_name = datetime.now().isoformat()
+
+    file_name = f"food_nutrition_csv/{object_name}"
+    # Upload the file
+    try:
+        s3_client.upload_file(file_path, bucket, file_name)
+    except NoCredentialsError:
+        print("Credentials not available")
+        return False
+    return True
 ###########################################################
 
 if __name__ == "__main__":
-    result = query_from_athena()
-    # response_to_df(result)
-    print(response_to_df(result))
+    print(query_from_athena())
+    # if upload_food_nutrition_csv("./OUTPUTS/test1.csv", object_name="food_nutrition_csv/test1.csv"):
+    #     result = query_from_athena()
+    #     print(result)
