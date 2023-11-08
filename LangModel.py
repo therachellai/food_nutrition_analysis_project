@@ -1,5 +1,8 @@
 import openai
 from CollectData import read_text
+from dotenv import load_dotenv
+import os
+
 
 """
 This is a draft as well (mostly from GPT itself); I haven't made the payment, 
@@ -14,12 +17,19 @@ threshold, we label it as bad. If we have time, we can do allergens too
 using keywords from LM.
 """
 
+
 def author():
     """
     Returns:
        author name in list
     """
     return ['Rachel Yu-Wei Lai']
+
+###########################################################
+
+load_dotenv()
+
+OPEN_AI_ACCESS_KEY = os.getenv("OPEN_AI_SECRET_KEY")
 
 def language_model_ingredients(file_name: str) -> str:
     """
@@ -33,7 +43,7 @@ def language_model_ingredients(file_name: str) -> str:
     """
     
     # Set your API key
-    api_key = "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"
+    api_key = OPEN_AI_ACCESS_KEY
 
     # Define your prompt (the text you want to provide as input)
     ingredients = read_text(file_name)
