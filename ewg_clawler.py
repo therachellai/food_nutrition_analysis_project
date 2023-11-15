@@ -59,7 +59,7 @@ if __name__ == "__main__":
     ct = 20000000
     start_url = 'https://www.ewg.org/foodscores/products/?category_group=&page=1&per_page=48&type=products'
     pages = int(etree.HTML(requests.get(start_url).text).xpath('//a[@aria-label]')[-1].text)
-    for page_number in range(1, 3):
+    for page_number in range(1, pages+1):
         food_labels = get_food_label(page_number)
         for a in food_labels:
             nutrition_fact = get_food_info(a)
@@ -69,8 +69,6 @@ if __name__ == "__main__":
                 all_data_list.append(nutrition_fact)
             else:
                 continue
-            if ct > 10:
-                break
 
     all_data_df = pd.DataFrame(all_data_list)
     all_data_df.to_csv('ewg_data.csv', index=False)
