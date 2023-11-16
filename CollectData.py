@@ -28,7 +28,7 @@ def read_text(file_name: str) -> list:
     file_name = 'foodlabel.png'
     reader = easyocr.Reader(['en'])
     text = reader.readtext(f'{source_dir}/{file_name}', detail = 0, text_threshold=0.7)
-    print(text)
+    # print(text)
     return text
         
 def convert_image_to_pdf() -> None:
