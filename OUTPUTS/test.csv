@@ -1,2 +1,2 @@
-,name,add_sugar_calories_percentage,fat_calories_percentage,protein_calories_percentage,carbohydrates_calories_percentage,saturated_fat_calories_percentage,trans_fat_calories_percentage
-Row2,food2,0.0334,0.15,0.1833,0.7667,0.0563,0.0
+,category,suga_to_total,fat_to_total,pro_to_total,carb_to_total,satu_to_total,tran_to_total
+962976f9-d51c-4428-aac2-e9670fd81e26,food1,0.0333,0.15,0.1833,0.7667,0.0563,0.0

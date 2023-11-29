@@ -30,12 +30,12 @@ class DecisionTreeRegressorModel:
     def get_feature_importance(self):
         return self.model.feature_importances_
 
-def convert_info_to_df(df: pd.DataFrame)-> pd.DataFrame:
-    columns = ['Name', 'suga_to_total', 'fat_to_total', 'pro_to_total', 'carb_to_total', 'satu_to_total', 'tran_to_total', 'Score', 'Category']  # Replace these with your column names
+def convert_info_to_df_database_dt(df: pd.DataFrame)-> pd.DataFrame:
+    columns = ['Name', 'suga_to_total', 'fat_to_total', 'pro_to_total', 'carb_to_total', 'satu_to_total', 'tran_to_total', 'Score', 'category']  # Replace these with your column names
     nutrition = pd.DataFrame(columns=columns)
     nutrition['Name'] = df['Name']
     nutrition['Score'] = df['Score']
-    nutrition['Category'] = df['Category']
+    nutrition['category'] = df['Category']
     # Calories from Added Sugar vs Total Calories
     nutrition['suga_to_total'] = round(df['Added Sugar'] * 4 / df['Calories'], 4)
     # Calories from Fat vs Total Calories
@@ -52,7 +52,7 @@ def convert_info_to_df(df: pd.DataFrame)-> pd.DataFrame:
 
 if __name__ == "__main__":
     df = pd.read_csv('INPUTS/data_for_model_training.csv')
-    df = convert_info_to_df(df)
+    df = convert_info_to_df_database_dt(df)
     df = df.dropna()
 
     model = DecisionTreeRegressorModel(df)

@@ -60,12 +60,12 @@ class LinearRegressionModel:
         predicted_score = self.model.predict(new_data_features)
         return predicted_score[0]
         
-def convert_info_to_df(df: pd.DataFrame)-> pd.DataFrame:
-    columns = ['Name', 'suga_to_total', 'fat_to_total', 'pro_to_total', 'carb_to_total', 'satu_to_total', 'tran_to_total', 'Score', 'Category']  # Replace these with your column names
+def convert_info_to_df_databse_lr(df: pd.DataFrame)-> pd.DataFrame:
+    columns = ['category', 'suga_to_total', 'fat_to_total', 'pro_to_total', 'carb_to_total', 'satu_to_total', 'tran_to_total', 'Score', 'category']  # Replace these with your column names
     nutrition = pd.DataFrame(columns=columns)
     nutrition['Name'] = df['Name']
     nutrition['Score'] = df['Score']
-    nutrition['Category'] = df['Category']
+    nutrition['category'] = df['Category']
     # Calories from Added Sugar vs Total Calories
     nutrition['suga_to_total'] = round(df['Added Sugar'] * 4 / df['Calories'], 4)
     # Calories from Fat vs Total Calories
@@ -84,8 +84,11 @@ def convert_info_to_df(df: pd.DataFrame)-> pd.DataFrame:
 if __name__ == "__main__":
     # df is our dataFrame with features 'Protein', 'Fat', 'Carbs', 'Trans Fat', and a score to evaluate healthiness
     df = pd.read_csv('INPUTS/data_for_model_training.csv')
-    df = convert_info_to_df(df)
+    print(df)
+    df = convert_info_to_df_databse_lr(df)
+    print(df)
     df = df.dropna()
+    print(df)
     model = LinearRegressionModel(df)
     model.split_data(test_size=0.2, random_state=42)
     model.train_model()
@@ -99,5 +102,5 @@ if __name__ == "__main__":
         print(f"{feature}: {coef}")
         
     # make predictions on new data
-    new_data = pd.read_csv('NEW_DATA.csv')
-    predicted_scores = model.predict_new_data(new_data)
+    # new_data = pd.read_csv('NEW_DATA.csv')
+    # predicted_scores = model.predict_new_data(new_data)
