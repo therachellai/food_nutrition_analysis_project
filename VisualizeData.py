@@ -18,15 +18,15 @@ def main():
         st.image(image, caption='Uploaded Photo', use_column_width=True)
         
     if st.button('Read Text'):
-            try:
-                text_result = read_text(image)
-                
-                st.subheader('Extracted Text:')
-                for text in text_result:
-                    st.write(text)  # Display the recognized text
+        try:
+            text_result = read_text(image)
+            
+            st.subheader('Extracted Text:')
+            for text in text_result:
+                st.write(text)  # Display the recognized text
 
-            except Exception as e:
-                st.error(f"Error: {e}")
+        except Exception as e:
+            st.error(f"Error: {e}")
                 
     st.subheader('Extracted Info:')
     extracted_info = extract_info_from_text(text_result, 'meals')
@@ -39,6 +39,7 @@ def main():
 #############################
 
     st.title('Two Machine Learning Models')
+    st.subheader('* We are choosing the model with ')
 
     # Using columns to display text side by side
     col1, col2 = st.columns(2)  # Split the layout into 2 columns
@@ -60,9 +61,6 @@ def main():
         for feature, coef in coefficients.items():
             st.write(f"{feature}: {coef}")
         
-    
-    predicted_scores = linear_model.model.predict(converted_df.drop('category', axis=1))
-
     with col2:
         data_for_model_training_raw = pd.read_csv('INPUTS/data_for_model_training.csv')
         data_for_model_training = convert_info_to_df_database_dt(data_for_model_training_raw)
@@ -81,7 +79,33 @@ def main():
         for feature, importance in zip(data_for_model_training.columns[1:], feature_importance):
             st.write(f"{feature}: {importance}")
 
-    predicted_scores = linear_model.model.predict(converted_df.drop('category', axis=1))
+    predicted_score = linear_model.model.predict(converted_df.drop('category', axis=1))[0]
+    st.header('Estimated Score')
+    st.subheader('From the Linear Regression Model')
+    st.write(f"*{predicted_score}*")
 
+    ########################################################## 
+    """ This is the space for implementing the language model """
+    ##########################################################
+
+    if predicted_score < 3:
+        st.write('This food is great. Nice choice!')
+    elif predicted_score < 5 and predicted_score >= 3:
+        st.write('This food is fine. You can consume it as is. However, here are a few options:')
+    else:
+        st.write('This food is not good for your health. Please take a look at healthier options:')
+    
+    ##########################################################
+    """ This is the space for generating options which share the same category but have the lowest three scores """
+    ##########################################################
+    
+    ##########################################################
+    """ This is the space for generating plots that compare nutrition of current food with suggested food """
+    ##########################################################
+    
+    ##########################################################
+    """ This is the space for pasting the charts from user analysis """
+    ##########################################################
+    
 if __name__ == '__main__':
     main()
