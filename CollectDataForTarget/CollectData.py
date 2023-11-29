@@ -49,7 +49,7 @@ def convert_image_to_pdf() -> None:
             image_converted.save(os.path.join(output_dir, '{0}.pdf'.format(file.split('.')[-2])))
     return
 
-def extract_info_from_text(text: list, name: str) -> dict:
+def extract_info_from_text(text: list, category: str) -> dict:
     """
     Using the text output from read_text function, extract info and convert it into a 
     pandas df. Each time we run the read_text function, the output will become one row in 
@@ -58,7 +58,7 @@ def extract_info_from_text(text: list, name: str) -> dict:
     ------------------
     Parameters: 
     text: text in str
-    name: name of food in str
+    category: category of food in str
     ------------------
     Returns: single-row table with columns as features in pd.DataFrame
     """
@@ -73,7 +73,7 @@ def extract_info_from_text(text: list, name: str) -> dict:
     more to be added
     """
     nutrition_map = {}
-    nutrition_map['Name'] = name
+    nutrition_map['Category'] = category
     for i in range(len(text)):
         if text[i] == 'Calories':
             nutrition_map['Calories'] = int(text[i+1])
@@ -102,7 +102,7 @@ def extract_info_from_text(text: list, name: str) -> dict:
 
 def convert_info_to_df(d: dict)-> pd.DataFrame:
     nutrition_map = {}
-    nutrition_map['Name'] = d['Name']
+    nutrition_map['category'] = d['Category']
     # Calories from Added Sugar vs Total Calories
     nutrition_map['suga_to_total'] = round(d['Added Sugar'] * 4 / d['Calories'], 4)
     # Calories from Fat vs Total Calories
@@ -119,7 +119,7 @@ def convert_info_to_df(d: dict)-> pd.DataFrame:
     print(res)
     return res
 
-def add_name_and_score(df: pd.DataFrame) -> pd.DataFrame:
+def add_category_and_score(df: pd.DataFrame) -> pd.DataFrame:
     """
     Add name of food and score from the website: 
     https://www.ewg.org/foodscores/products/888849006045-QuestProteinCookiePeanutButter/

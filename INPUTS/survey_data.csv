@@ -1,0 +1,85 @@
+,response,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9
+0,1,21-25,Female,5,5-10,Lose weight;Gain Muscle Mass;Build strength,High in Protein;Low in Added Sugars;High Fiber;Accessibility;Affordability,Yes,5,"8,10"
+1,2,26-30,Male,3,2-5,Lose weight;Gain Muscle Mass,High in Protein;Instant Gratification that Comes with Food Consumption;Accessibility;Affordability,Yes,5,"7,9"
+2,3,26-30,Male,2,2-5,Lose weight;Gain Muscle Mass;Improve General Health Level,Low in Fat;Low in Added Sugars;Instant Gratification that Comes with Food Consumption,Yes,3,"6,8"
+3,4,26-30,Female,2,0-2,Gain Muscle Mass;Improve General Health Level,High in Protein;High Nutrition Density,Yes,4,"7,8"
+4,5,26-30,Male,4,5-10,Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Added Sugars;Low in Saturated Fat/Trans Fat;Low Sodium;Accessibility;Affordability,Yes,4,"7,8"
+5,6,26-30,Male,4,Over 10,Maintain weight;Gain Muscle Mass,High in Protein;Low in Fat;Low in Added Sugars;Accessibility;Affordability,Yes,4,"8,8"
+6,7,31-35,Female,2,2-5,Build Stamina;Improve General Health Level,High in Protein;Low in Saturated Fat/Trans Fat;Instant Gratification that Comes with Food Consumption;Low Sodium,Yes,4,"6,10"
+7,8,21-25,Female,3,0-2,Lose weight,High in Protein;Low in Carbohydrates,Yes,5,
+8,9,21-25,Male,3,2-5,Gain Muscle Mass;Build strength,High in Protein;Low in Added Sugars;Instant Gratification that Comes with Food Consumption,Yes,4,"7,9"
+9,10,21-25,Male,4,5-10,Gain Muscle Mass,High in Protein;Accessibility;Affordability,Yes,4,"7,8"
+10,11,26-30,Male,4,5-10,Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Carbohydrates;Low in Added Sugars;High Nutrition Density;Low Sodium,Yes,5,"6,8"
+11,12,26-30,Male,2,2-5,Lose weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,Low in Fat;Low in Carbohydrates;Low in Added Sugars;Low in Saturated Fat/Trans Fat;High Fiber;Low Sodium,Yes,4,"7,8"
+12,13,21-25,Male,1,0-2,Lose weight;Build strength;Improve General Health Level,Low in Fat;Allergies;Instant Gratification that Comes with Food Consumption;Accessibility;Affordability,Yes,5,"7,8"
+13,14,31-35,Female,4,2-5,Lose weight;Build strength,Low in Fat;Low Sodium,Yes,4,
+14,15,31-35,Male,2,0-2,Gain Muscle Mass,Low in Added Sugars,Yes,4,
+15,16,26-30,Female,3,5-10,Maintain weight;Improve General Health Level,High in Protein;Instant Gratification that Comes with Food Consumption;Accessibility,Yes,4,"6,8"
+16,17,26-30,Male,4,2-5,Gain weight;Gain Muscle Mass;Build strength;Improve General Health Level,High in Protein;Low in Added Sugars,Yes,4,"6,9"
+17,18,26-30,Female,2,0-2,Lose weight;Improve General Health Level,High in Protein;Low in Carbohydrates;Low in Added Sugars,Yes,4,"7,10"
+18,19,26-30,Male,2,0-2,Lose weight,Accessibility;Affordability,Yes,2,"5,8"
+19,20,36-40,Male,4,5-10,Build strength,Low in Added Sugars,Yes,4,
+20,21,26-30,Male,4,5-10,Lose weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Allergies;High Nutrition Density;High Fiber,Yes,5,"7,9"
+21,22,31-35,Male,3,5-10,Maintain weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Added Sugars;Low in Saturated Fat/Trans Fat;High Nutrition Density;High Fiber,Yes,4,"8,9"
+22,23,21-25,Female,1,2-5,Maintain weight;Build strength;Improve General Health Level,High in Protein;Low in Added Sugars;Instant Gratification that Comes with Food Consumption;High Nutrition Density;Accessibility,Yes,4,"3,8"
+23,24,21-25,Male,3,2-5,"Nothing, Just Goofing Around",Low in Carbohydrates;Instant Gratification that Comes with Food Consumption;Accessibility;Affordability,Yes,3,"5,7"
+24,25,31-35,Male,2,0-2,Lose weight;Gain Muscle Mass;Build strength,Instant Gratification that Comes with Food Consumption,Yes,5,"6,9"
+25,26,26-30,Male,4,Over 10,Build strength;Build Stamina;Improve General Health Level,High in Protein;Allergies;High Fiber,Yes,4,"8,8"
+26,27,26-30,Male,1,5-10,"Nothing, Just Goofing Around",High in Protein;Instant Gratification that Comes with Food Consumption,Yes,4,
+27,28,21-25,Male,4,5-10,Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Carbohydrates;Low in Added Sugars;High Nutrition Density;High Fiber,Yes,4,"7,8"
+28,29,31-35,Female,4,0-2,Lose weight,High in Protein;Low in Carbohydrates;Low in Added Sugars,Yes,5,"10,10"
+29,30,21-25,Female,2,0-2,Lose weight;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Added Sugars;High Fiber,Yes,4,"7,8"
+30,31,26-30,Female,3,2-5,Improve General Health Level,Low in Added Sugars;Low in Saturated Fat/Trans Fat;Instant Gratification that Comes with Food Consumption;Low Sodium,Yes,3,"10,10"
+31,32,46-50,Male,3,0-2,Lose weight;Gain Muscle Mass,High in Protein;High Nutrition Density;Affordability,Yes,5,"3,8"
+32,33,26-30,Male,3,2-5,Build strength;Build Stamina;Improve General Health Level,High Nutrition Density;Accessibility,Yes,3,"6,7"
+33,34,31-35,Male,5,2-5,Gain Muscle Mass;Build strength;Improve General Health Level,High in Protein;Low in Fat;Low in Carbohydrates;Low in Added Sugars;Low in Saturated Fat/Trans Fat;Low Sodium;Accessibility;Affordability,Yes,5,"8,8"
+34,35,31-35,Male,3,0-2,Maintain weight;Gain Muscle Mass;Build strength,High in Protein;Low in Carbohydrates;Low in Added Sugars,Yes,5,"1,8"
+35,36,21-25,Male,4,2-5,Lose weight;Gain Muscle Mass;Build strength;Improve General Health Level,High in Protein;Low in Added Sugars;Low in Saturated Fat/Trans Fat;High Fiber;Low Sodium,Yes,4,"7,8"
+36,37,26-30,Male,4,5-10,Lose weight;Maintain weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Fat;Low in Added Sugars;Low in Saturated Fat/Trans Fat;High Nutrition Density;High Fiber;Low Sodium;Accessibility;Affordability,Yes,5,"8,8"
+37,38,26-30,Female,2,0-2,Lose weight;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Saturated Fat/Trans Fat;Instant Gratification that Comes with Food Consumption;High Nutrition Density;Accessibility,Yes,4,"7,10"
+38,39,31-35,Male,3,0-2,Lose weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,Instant Gratification that Comes with Food Consumption,Yes,5,"9,10"
+39,40,26-30,Male,3,5-10,Gain Muscle Mass;Build strength;Build Stamina,High in Protein;Instant Gratification that Comes with Food Consumption,Yes,4,
+40,41,26-30,Female,3,2-5,Maintain weight;Gain Muscle Mass;Build strength,High in Protein;Low in Carbohydrates;Low in Added Sugars,Yes,4,"8,9"
+41,42,36-40,Female,2,2-5,Improve General Health Level,Instant Gratification that Comes with Food Consumption;Affordability,Yes,5,
+42,43,26-30,Female,3,2-5,Lose weight;Build strength;Build Stamina;Improve General Health Level,Instant Gratification that Comes with Food Consumption;Accessibility;Affordability,Yes,3,"5,7"
+43,44,21-25,Female,2,0-2,Lose weight;Build strength;Improve General Health Level,Affordability,Yes,5,"5,9"
+44,45,26-30,Male,4,Over 10,Gain weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;High Nutrition Density;Affordability,Yes,4,"7,8"
+45,46,36-40,Male,2,0-2,Lose weight;Gain Muscle Mass,Allergies;Accessibility;Affordability,Yes,4,"3,6"
+46,47,21-25,Male,3,0-2,Lose weight;Build strength;Build Stamina,Low in Carbohydrates;Low in Saturated Fat/Trans Fat;Allergies,Yes,3,"5,5"
+47,48,31-35,Male,3,0-2,Gain Muscle Mass,High in Protein;High Fiber;Accessibility;Affordability,Yes,4,
+48,49,21-25,Male,5,5-10,Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Saturated Fat/Trans Fat;High Nutrition Density;High Fiber,Yes,4,"7,8"
+49,50,31-35,Male,4,2-5,Build strength,Low in Saturated Fat/Trans Fat,Yes,4,
+50,51,21-25,Female,1,0-2,"Maintain weight;Nothing, Just Goofing Around",Accessibility;Affordability,Yes,5,"10,10"
+51,52,31-35,Male,2,0-2,Lose weight;Improve General Health Level,High in Protein;Low in Carbohydrates;High Fiber,Yes,5,"8,8"
+52,53,26-30,Female,2,0-2,Improve General Health Level,Low in Carbohydrates,Yes,4,"5,8"
+53,54,31-35,Male,4,0-2,Lose weight;Gain Muscle Mass,Low in Saturated Fat/Trans Fat,Yes,4,
+54,55,31-35,Male,2,2-5,Maintain weight;Build strength;Improve General Health Level,Low in Added Sugars;High Fiber;Low Sodium,Yes,4,"6,8"
+55,56,26-30,Male,3,0-2,Maintain weight;Build strength;Build Stamina,Low in Fat;Low in Added Sugars;High Nutrition Density;Accessibility;Affordability,Yes,4,"8,9"
+56,57,Over 51,Male,3,2-5,Maintain weight;Build strength;Improve General Health Level,High in Protein;Low in Carbohydrates;Affordability,Yes,4,"5,8"
+57,58,26-30,Female,4,5-10,Lose weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Carbohydrates,Yes,4,"7,8"
+58,59,26-30,Male,4,5-10,Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Added Sugars,Yes,4,"7,7"
+59,60,31-35,Female,2,2-5,Lose weight;Improve General Health Level,High in Protein;Low in Fat;Low in Carbohydrates;Low in Added Sugars;High Fiber;Affordability,Yes,5,"6,9"
+60,61,21-25,Female,2,0-2,Lose weight;Gain Muscle Mass,High in Protein;Low in Fat;Low in Added Sugars;High Fiber;Affordability,Yes,4,
+61,62,21-25,Male,3,5-10,Lose weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;High Nutrition Density;Accessibility;Affordability,Yes,4,"6.5,8"
+62,63,21-25,Male,4,2-5,Lose weight,High in Protein;Low in Fat;Low in Added Sugars;Instant Gratification that Comes with Food Consumption;High Nutrition Density;Low Sodium;Affordability,Yes,4,"7,8"
+63,64,21-25,Male,2,2-5,Gain weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Fat;Low in Carbohydrates;Low in Added Sugars;Low in Saturated Fat/Trans Fat,Yes,5,"6,7"
+64,65,26-30,Male,3,2-5,Lose weight;Maintain weight;Build Stamina;Improve General Health Level,Low in Carbohydrates;Low in Added Sugars,Yes,4,
+65,66,26-30,Male,3,0-2,Maintain weight;Build Stamina,High in Protein;Low in Carbohydrates;Low in Added Sugars,Yes,4,"5,8"
+66,67,31-35,Male,3,2-5,Lose weight;Build strength,Low in Fat;Low in Carbohydrates,Yes,4,
+67,68,31-35,Male,3,0-2,Gain Muscle Mass;Build strength;Improve General Health Level,High Nutrition Density;Accessibility;Affordability,Yes,4,
+68,69,21-25,Female,3,0-2,Lose weight;Improve General Health Level,Low in Added Sugars;Accessibility;Affordability,Yes,4,"5,8"
+69,70,21-25,Male,2,Over 10,Gain Muscle Mass;Build strength,High in Protein;Low in Fat;Low in Carbohydrates;Low in Saturated Fat/Trans Fat,Yes,4,"8,10"
+70,71,21-25,Female,3,Over 10,Lose weight;Build strength;Build Stamina;Improve General Health Level,Instant Gratification that Comes with Food Consumption;Accessibility,Yes,4,"5,7"
+71,72,21-25,Female,3,Over 10,Lose weight;Gain Muscle Mass;Build Stamina;Improve General Health Level,High in Protein;Low in Fat;Low in Carbohydrates,Yes,4,"6,8"
+72,73,26-30,Female,1,0-2,"Nothing, Just Goofing Around",Instant Gratification that Comes with Food Consumption,Yes,3,"10,10"
+73,74,31-35,Male,1,0-2,Maintain weight;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Added Sugars;High Nutrition Density;High Fiber;Low Sodium,Yes,5,"6,7"
+74,75,31-35,Male,4,2-5,Lose weight;Gain Muscle Mass,Low in Carbohydrates;Low in Added Sugars;Low in Saturated Fat/Trans Fat,Yes,5,
+75,76,26-30,Male,3,5-10,Build strength,Low in Saturated Fat/Trans Fat,Yes,4,
+76,77,21-25,Female,3,2-5,Lose weight;Maintain weight;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Fat;Low in Added Sugars;Low in Saturated Fat/Trans Fat;High Nutrition Density;Accessibility,Yes,4,"7,8"
+77,78,26-30,Female,3,0-2,Improve General Health Level,High Nutrition Density,Yes,4,"7,8"
+78,79,41-45,Female,3,5-10,Lose weight;Improve General Health Level,High in Protein;Low in Fat;Low in Carbohydrates;Low in Added Sugars;Low in Saturated Fat/Trans Fat;High Nutrition Density;High Fiber;Low Sodium;Accessibility;Affordability,Yes,5,"7,9"
+79,80,21-25,Female,5,Over 10,Gain weight;Maintain weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Fat;Low in Added Sugars;Low in Saturated Fat/Trans Fat;Affordability,Yes,5,"10,10"
+80,81,36-40,Female,1,0-2,"Nothing, Just Goofing Around",Allergies;Instant Gratification that Comes with Food Consumption,Yes,4,"5,10"
+81,82,26-30,Male,5,0-2,Maintain weight;Gain Muscle Mass;Build strength;Build Stamina;Improve General Health Level,High in Protein;Low in Added Sugars;Instant Gratification that Comes with Food Consumption;High Nutrition Density;High Fiber;Low Sodium;Accessibility;Affordability,Yes,5,"7,9"
+82,83,26-30,Female,3,2-5,Lose weight;Gain Muscle Mass,High in Protein;Low in Added Sugars,Yes,5,"6,6"
+83,84,21-25,Male,2,0-2,Lose weight;Build strength;Build Stamina;Improve General Health Level,Low in Carbohydrates;Low in Added Sugars;Low in Saturated Fat/Trans Fat;High Nutrition Density;High Fiber,Yes,4,"7,9"

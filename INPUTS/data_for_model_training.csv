@@ -1,0 +1,201 @@
+uid,Name,Score,Calories,Total Fat,Total Carbohydrate,Protein,Saturated Fat,Trans Fat,Cholesterol,Sodium,Dietary Fiber,Sugars,Total Sugar,Added Sugar,Category
+10000001,"Tattooed Chef Organic Greens 5 a Blend of Seasoned Zucchini, Broccoli, Haricots Verts, Peas, & Leeks, Organic Greens 5",1.2,45,2,6,2,0,0,0,0.17,2,0,2,0,vegetable
+10000008,"Gutzy Organic Fruit & Veg Snack, Apple, Spinach, Kiwi & Kale",1.2,80,0,19,1,0,0,0,0.02,8,10,10,0,smoothie
+10000023,"O+B4:B24nce Upon a Farm Tropical Cold Pressed Organic Dairy Free Smoothie, Tropical",1.1,100,4,16,3,1,0,0,0,0,0,10,0,smoothie
+10000196,"World Class Bakery Chocolate Chocolate Chip Muffin, Chocolate Chocolate Chip",8,210,13,0,3,3,0,0.04,0,1,14,14,0,bread
+10000195,"World Class Bakery Chocolate Oatmeal Macadamia, Chocolate Oatmeal",8,200,9,0,2,4,0,0.016,0,1,16,10,10,dessert
+10000202,"World Class Bakery Apple Coffee Cake Strip, Apple Coffee Cake",8,130,7,0,2,1,1.5,0.01,0.22,1,8,8,8,dessert
+10000206,"Wondershop Pretzel Rods Toffee Crunch Dipped in Chocolate, Pretzel Rods",8,110,4,16,2,2,0,0.005,0.135,1,0,7.7,7.7,snack
+10000246,O Organics Organic 100% Pure Maple Syrup,3.5,110,0,26,0,0,0,0,0,0,0,26,26,syrup
+10000247,"O Organics Organic Almondmilk, Plain Unsweetened",3.5,45,3,2,1,0,0,0,0.16,0,0,0,0,milk
+10000259,O Organics Grass Fed Vitamin D Organic Milk,3.5,160,9,11,8,6,0,0.035,0.12,0,0,11,0,milk
+10000267,"O Organics Chocolate Organic Low Fat 1% Milkfat, Chocolate",3.5,130,2,20,8,1,0,0.01,0.17,1,0,20,20,snack
+10000462,Wellsley Farms Steam in Bag Super Sweet Corn,1.3,70,0,16,2,0,0,0,0,2,0,3,0,snack
+10000561,Lucerne Farms Cage Free 100% Liquid Egg Whites,1.5,25,0,0,5,0,0,0,0.075,0,0,0,0,ingredient
+10000572,"Inner Eco Pureed Coconut, Creamy & Mild Smoothie Pack, Pureed Coconut, Creamy & Mild",1.5,30,2,3,0,1,0,0,0,2,0,0,0,beverage
+10000574,Food Lion Pitted Dark Sweet Cherries,1.5,90,0,22,2,0,0,0,0,3,0,18,0,fruit
+10000612,Silver Hills Sprouted Power Organic Bagels,1.5,210,3,39,8,0,0,0,0,4,0,5,5,bread
+10000617,"Painterland Sisters Vanilla Bean Icelandic Style Skyr Organic Yogurt, Vanilla Bean",1.5,160,8,0,16,0,0,0,0.05,0,0,9,9,yogurt
+10000632,"Grandyoats Honey Nut Granola, Honey Nut",1.5,130,6,16,4,0,0,2,0.03,2,0,3.6,3.6,snack
+10000639,"Cascadian Farm Organic Organic Hearty Blend Brown Rice, Corn, Black Beans and Red Bell Pepper, Organic Hearty Blend",1.5,120,0,24,5,0,0,0,0.085,5,0,1.9,1.9,meals
+10000682,"else plant-powered almonds & buckwheat super cereal, original",1.4,60,2,10,2,0,0,0,0,1,0,0.5,0,cereals
+10000684,"Amafruits Traditional Pure Acai Sorbet, Traditional Pure Acai",1.4,160,4,0,1,0,0,0,0.005,4,0,30,15,fruit
+10000889,"Materne Gogo Squeez Apple Sauce, Apple Peach",1.5,70,0,15,0,0,0,0,0,3,12,12,0,fruit
+10164892,Axelrod Lowfat Cottage Cheese,2.2,90,1,0,14,0,0,0.015,0.06,0,0,5,5,cheese
+10165009,"Choc Zero Chocolate Flavored Syrup, Chocolate",2.2,37,0,15,0,0,0,0,0.005,14,0,0,0,syrup
+10165013,"Chobani Whole Milk Greek Yogurt, Original Plain",2.2,170,9,7,15,5,0,0.035,0.06,1,0,6,6,yogurt
+10155200,"A Shoprite Bowl & Basket. Plain Sweetened Lowfat Yogurt, Plain Sweetened",3.5,110,1,0,6,0,0,0,0.095,0,0,12,0,yogurt
+10155216,Aneto 100% Natural Cooking Base for Seafood Paella,3.5,98,8,3,3,1,1,0.007,1.056,2,0,1,0,ingredient
+10155484,Country Fresh Cottage Cheese,3.5,90,1,0,12,0,0,0,0.47000000000000000,0,0,3.3,0,cheese
+10157547,"Bilinski's Apple Breakfast Organic Fully Cooked Chicken Sausage, Apple Breakfast",3.5,70,2,4,9,0,0,0.035,0.24,0,0,4,4,sausage
+10157550,"Bilinski's Organic Chicken Sausage, Spinach & Feta, Spinach & Feta",3.5,70,2,1,12,0,0,0.05,0.5,0,0,0,0,sausage
+10157646,365 Everyday Value Organic Crunch Peanut Butter,3.5,190,16,0,7,0,0,0,0.085,2,0,2,0,butter
+10157789,"Aidells Organic Smoked Chicken Sausage, Sweet Basil & Roasted Garlic",3.5,140,9,0,13,3,0,0.08,0.48,1,1,0,0,sausage
+10136627,"Tree Ripe Grove Select No Pulp 100% Orange Juice, 128 Fl Oz",4,110,0,26,2,0,0,0,0.01,0,22,26,26,beverage
+10136653,"Tuscanini Italian Spelt Rosemary Crostini Crackers, Rosemary",4,130,3,23,3,0,0,0,0.22,2,1,1,0,snack
+10136708,"Triscuit Triscuit Nabisco, Triscuit, Crackers, Original, Original",4,120,3,20,3,0,0,0,0.16,3,0,0,0,snack
+10136912,"Wegmans No Pulp 100% Premium Orange Juice, Orange",4,110,0,26,2,0,0,0,0,0,0,22,0,beverage
+10137068,"Weis Quality Peach Pie Filling & Topping, Peach",4,90,0,22,0,0,0,0,0.01,1,18,14,14,fruit
+10138692,Sintons 4% Small Curd Cottage Cheese,4,120,5,0,12,0,0,0.025,0.42,0,0,4,0,cheese
+10127030,"Ore Ida Sharp White Cheddar Cheese, Mild Cheddar Cheese, Potatoes, Broccoli, Mushrooms, Onions & Red Peppers Veggie Scramble Kit, Sharp White Cheddar Cheese, Mild Cheddar Cheese, Potatoes, Broccoli, Mushrooms, Onions & Red Peppers",4.5,190,15,0,10,9,0.5,0.04,0.27,1,0,0.5,0,snack
+10127207,Penn Maid 4% Cottage Cheese With Pineapple,4.5,130,3,0,10,2,0,0.02,0.31,0,0,13,13,cheese
+10127288,"Pf Snacks Apple Rings, 6 Oz",4.5,100,0,26,0,0,0,0,0.035,3,23,23,23,snack
+10127292,"Petitpot Dark Chocolate Creamy French Dessert, Dark Chocolate",4.5,190,13,0,4,0,0,0,0.08,0,0,14,14,snack
+10127293,Pf Snacks Black Raisins,4.5,120,0,32,1,0,0,0,0,1,24,24,0,snack
+10127350,"Perdue Chicken Breast Nuggets, Original",4.5,210,12,13,12,2,0,0.04,0,0,0,0,0,meats
+10127400,"Polly O Mozzarella Part Skim Cheese, Mozzarella",4.5,70,5,0,6,0,0,0,0.2,0,0,0.5,0.5,cheese
+10127457,"Prairie Farms Chocolate Whole Milk, Chocolate",4.5,210,7,29,8,4,0,0.02,0.15,0,0,28,28,milk
+10127611,Maple Leaf Farms All Natural* Duck Legs,4.5,330,29,0,16,0,0,0,0.085,0,0,0,0,meats
+10127658,"Juicy Juice 100% Juice, Kiwi Strawberry",4.5,100,0,24,0,0,0,0,0.015,0,0,22.5,0,beverage
+10127713,Great Value Mozzarella Cheese,4.5,80,5,0,8,0,0,0,0.17,0,0,0,0,cheese
+10127778,"Good & Gather Angus Beef Patties, Angus Beef",4.5,320,22,0,28,9,1.5,0.1,0.1,0,0,0,0,meats
+10127903,Good & Gather Half & Half,4.5,40,3,0,0,2,0,0.01,0.015,0,0,0,0,cream
+10128065,"Goya Thai Jasmine Rice, 2 Lbs",4.5,170,0,39,3,0,0,0,0.01,0,0,0,0,rice
+10128090,"Goya Pear Nectar, 33.8 Fl Oz",4.5,120,0,29,1,0,0,0,0,3,29,27.2,27.2,beverage
+10133279,"Food Club Tapioca Pudding, Tapioca",4.5,140,3,0,4,2,0,0.02,0.15,0,0,16.7,14.1,dessert
+10133451,"Fresh Provisions Mango Peach Salsa Fresca, Mango Peach",4.5,15,0,0,0,0,0,0,0.12,0,0,3,1,sauce
+10133455,"Fresh Thyme Classic Hummus, Classic",4.5,60,4,0,2,0,0,0,0.135,0,0,0,0,sauce
+10133462,"Fresh Express Slaw Salad Kit Premium Honey Pecan Salad, 9.3 Oz",4.5,110,6,15,2,1,0,0.005,0.25,2,11,11,6,salad
+10133569,"Frontier Plain English Muffins, Plain",4.5,130,0,27,5,0,0,0,0.4,1,0,1,1,bread
+10133884,"Best Choice Sliced White Hamburger Buns, Sliced White",4.5,110,1,21,4,0,0,0,0.2,1,0,3,3,bread
+10133944,"Belgioioso Ricotta Con Latte, Fresh, Milky",4.5,90,7,0,6,0,0,0,0.09,0,0,2,2,cheese
+10134171,"Big Y Shoestring French Fried Potatoes, Shoestring",4.5,130,5,21,2,1,0,0,0.18,2,0,0,0,vegetable
+10109865,"Favorite Day Assorted Popsicles, Grape, Lime, Cherry and Orange",5,40,0,10,0,0,0,0,0,0,0,8.3,8.3,Ice cream
+10109878,"El Rancho Honduran Style Cream, Honduran Style",5,54,5,0,1,0,0,0,0.129,1,1,0,0,cream
+10109947,"Cheetos Double Cheddar Cheese Flavored Eggs Shaped Puffs Snacks, Double Cheddar",5,140,9,13,2,1,0,0,0.22,1,0,0,0,snack
+10109995,"Cantina Fresca Egg & Sausage Cage Free Eggs, Turkey Sausage, Jack & Cheddar Cheeses, Wrapped in a Flour Tortilla Breakfast Burritos, Egg & Sausage",5,470,19,52,21,7,0,0.195,1.06,2,0,2,1,meals
+10109998,"Cantella's Hot Chicken Italian Sausage, Hot Chicken Italian",5,110,4,1,16,1,0,0.08,0.6900000000000000,0,0,0,0,sausage
+10110001,Canada Dry Mini Ginger Ale Soda,5,80,0,23,0,0,0,0,0.03,0,22,22,22,beverage
+10110032,Caribbean Dreams Coconut Milk,5,100,10,1,1,8,0,0,0.04,0,0,0,0,milk
+10110091,"Cass Clay Swiss Chocolate Reduced Fat Milk, Swiss Chocolate",5,200,5,0,9,0,0,0.02,0.2,0,0,29,29,snack
+10110219,"Cedar's Dark Chocolate Hommus With Pretzels Snack Pack, Dark Chocolate",5,310,11,49,6,1,0,0,0.31,4,0,18,18,sauce
+10110222,"Cedar Crest Milk Chocolate Ice Cream, Milk Chocolate",5,190,10,0,3,7,0,0.025,0.07,1,0,18,12,ice cream
+10110260,"Chatham Village Croutons, Garlic & Butter",5,35,1,4,1,0,0,0,0.055,0,0,0,0,toppings
+10110288,Certified Angus Beef 73% Lean 27% Fat Ground Beef,5,340,30,0,17,12,2,0.085,0.075,0,0,0,0,meats
+10110455,"Chobani Strawberry Cheesecake Inspired Zero Sugar Yogurt Cultured Dairy Drink, Strawberry Cheesecake",5,50,0,6,10,0,0,0.005,0.07,0,0,0,0,yogurt
+10110560,"Chocomaker Blue Vanilla Chocodrizzler Candy Wafers, Blue Vanilla",5,150,8,0,0,0,0,0,0.015,0,0,17.7,16.3,snack
+10110679,Clancy's Wavy Potato Chips,5,160,11,15,1,1,0,0,0.14,1,0,0,0,snack
+10110689,"Clancy's Original Potato Chips, Original",5,160,10,15,1,1,0,0,0.135,1,0,0,0,snack
+10110692,"Clancy's Pretzels Filled With Peanut Butter, Peanut Butter",5,130,5,17,4,1,0,0,0.19,1,0,2,1,snack
+10110697,Cj Foods Korean Style Crunchy Chicken With Sweet & Spicy Sauce,5,360,16,36,18,2,0,0.055,0.99,0,0,16,16,meats
+10110708,Clover Valley Hot Dog Buns,5,110,1,20,3,0,0,0,0.18,1,0,2,2,bread
+10110868,"Coco Rico Diet Coconut Soda, 2 L",5,0,0,0,0,0,0,0,0.031,0,0,0,0,beverage
+10110875,"Cocina Cardenas Chicken Soup, Chicken",5,50,1,5,6,0,0,0.015,0.29,0,0,2.5,2.5,ingredient
+10111437,Debacker Family Dairy Egg Nog,5,180,9,22,4,0,0,0.06,0.1,0,21,21,21,alcohol
+10111445,"Dean's Country Fresh Vanilla Flavored Reduced Fat Ice Cream, Vanilla",5,140,4,220,4,2,0,0.015,0.065,0,0,19.2,19.2,ice cream
+10111489,D'artagnan Mousse Duck Foie Gras,5,200,20,2,5,5,0,0.17,0.3,0,1,1,1,ingredient
+10111761,"Dinosaur Bar B Que Roasted Garlic Honey Bar B Que Sauce, 19 Oz",5,25,0,6,0,0,0,0,0.154,0,5,5,5,sauce
+10111789,"Dripdash Lavender+maple Oat Milk Latte, Lavender+maple",5,80,3,12,2,0,0,0,0.05,2,0,10,0,beverage
+10113230,"Maxine's Heavenly Almond Chocolate Chunk Soft Baked Cookies, Almond Chocolate Chunk",5,120,6,15,1,3,0,0,0.04,2,0,6,5,snack
+10113240,"Mamie's Pies Cherry Pocket Pie, Cherry",5,320,17,38,3,8,0,0,0.17,1,0,13,9,dessert
+10113273,"Molten Lava Chocolate Raspberry Indulgent Yogurt, Chocolate Raspberry",5,190,18,0,3,0,0,0,0.055,4,0,1,0,yogurt
+10113279,"Modern Table Creamy Alfredo Style Vegan Sauce & Pasta, Creamy Alfredo Style",5,300,1,55,15,0,0,0,0.53,4,0,2.8,0,meals
+10113362,"New York Style Sesame Bagel Crisps, Sesame",5,130,5,18,3,0,0,0,0.27,1,0,1,0,bread
+10113379,"Nature's Own Perfectly Crafted Brioche Style Thick Sliced Bread, Brioche Style",5,110,1,21,4,0,0,0,0.17,0,0,4,4,bread
+10113596,"Pipcorn Everything Heirloom Snack Crackers, Everything",5,130,4,22,2,0,0,0,0.35000000000000000,1,0,0,0,snack
+10113625,"Orchard Valley Harvest Spread'n Dip Peanut Butter Spread, Peanut Butter",5,180,15,0,7,0,0,0,0.11,2,0,3,2,butter
+10113641,"Orchard Valley Harvest Cashews Halves & Pieces, Sea Salt",5,160,13,8,5,2,0,0,0.09,1,0,1,1,nut
+10113650,Qmixers Q Light Ginger Beer,5,40,0,17,0,0,0,0,0.01,0,0,10,10,beverage
+10113666,"Portland Syrups Marionberry Syrup, Marionberry",5,50,0,0,0,0,0,0,0,0,12,13,13,syrup
+10063783,"Wegmans Cream Cheese, Cream",6,100,10,2,2,6,0,0.03,0.105,0,0,1.1,0,cheese
+10063799,"Tuv Taam Eggplant Babaganush, 7 Oz",6,40,3,1,0,0,0,0.005,0.075,0,0,0,0,sauce
+10063826,"The Carolina Nut Co. Buttermilk Ranch Peanuts, Buttermilk Ranch",6,160,11,10,6,1,0,0,0.135,6,0,1,0,snack
+10063846,"Sweet Earth Zesty Marinara and Creamy Cauliflower Herb Sauce Stone Baked Thin Crust Pizza, Zesty Marinara and Creamy Cauliflower Herb Sauce",6,280,10,40,7,3,0,0,0.66,2,0,3,1,meals
+10063851,"Sugar Hill Farms Hot & Spicy Patties With Rib Meat, Hot & Spicy",6,170,5,19,11,1,0,0.045,0.47000000000000000,0,0,0,0,meats
+10063873,Stater Bros. Macaroni & Cheese Dinner,6,250,1,0,8,0,0,0,0.5700000000000000,1,0,3.2,3.2,meals
+10063968,"Southern Living Gumbo Mix, Gumbo",6,15,0,4,0,0,0,0,0.125,0,0,1,0,rice
+10064031,"Sophia 100% Butter Traditional Italian Fruit Panettone Cake, Traditional Italian Fruit Panettone",6,380,13,0,8,0,0,0.095,0.18,0,0,26,26,dessert
+10064075,"Starbucks Frappuccino Mocha Flavored Almondmilk Chilled Coffee Drink, Mocha",6,120,3,21,2,0,0,0,0.085,2,0,17,17,beverage
+10064082,"Starbucks Frappuccino Chilled Coffee Drink, Mocha",6,190,3,33,7,2,0,0.015,0.095,0,0,46,32,beverage
+10064101,"Stacy's Pita Chips, Parmesan Garlic & Herb",6,130,5,18,4,0,0,0,0.26,1,0,0.5,0.5,snack
+10064273,Stater Bros. Markets Heavy Whipping Cream,6,50,5,0,0,0,0,0,0.005,0,0,0,0,cream
+10064408,Stater Bros. Pineapple Chunks in Heavy Syrup,6,120,0,29,0,0,0,0,0,1,0,28,28,fruit
+10064674,Sunny Select Crisp & Crunchy Ripple Potato Chips,6,150,10,15,1,1,0,0,0.14,1,0,0,0,snack
+10064718,"Sunny's Gourmet Products Korean Gochujang Fermented Hot Pepper Sauce, Korean Gochujang",6,25,0,10,1,0,0,0,0.26,1,3,5,5,sauce
+10064755,"Sunny Select Four Cheese Wood Fired Authentic Italian Pizza With Hand Stretched Crust, Four Cheese",6,460,18,0,24,9,1,0.04,0.78,4,0,3,0,meals
+10064955,"Tai Pei Chicken Egg Rolls, 8 Count, 24.5 Oz",6,130,7,14,5,0,0,0.02,0.36,2,2,2,2,snack
+10065055,"Taste of Inspirations Caesar Dressing, Caesar",6,110,11,2,1,1,0,0.005,0.24,0,0,1,0,sauce
+10065097,"Tender Belly No Sugar Uncured Bacon, No Sugar",6,90,8,0,5,0,0,0,0.14,0,0,0,0,meats
+10065119,"Teapigs Liquorice & Peppermint Caffeine Free Tea Temples, Liquorice & Peppermint",6,10,0,0,0,0,0,0,0.03,0,0,0,0,beverage
+10065135,"The Last Cow Strawberry Ice Cream, Strawberry",6,220,12,24,3,8,0,0.05,0.065,0,0,22,22,ice cream
+10065167,"The Cheesecake Factory at Home Chocolate Black Out 2 Decadent Dessert, Chocolate Black Out",6,340,17,0,5,9,0,0.06,0.15,0,0,36,31,dessert
+10065314,"That's Smart! Light Corn Syrup, Light",6,120,0,30,0,0,0,0,0.01,0,0,21,7.5,fruit
+10065315,That's Smart! Jumbo Popcorn Chicken,6,220,13,16,9,3,0,0.02,0.59,1,1,1,1,meats
+10065318,That's Smart! Instant Mashed Potato Flakes,6,70,0,15,1,0,0,0,0.015,1,0,0.5,0,meals
+10065502,"The Village Pie Maker Vanilla Bean Ice Cream, Vanilla Bean",6,280,13,0,4,0,0,0,0.17,0,0,28,20.2,ice cream
+10065651,"Tony's Chocolonely Milk Chocolate, Milk Chocolate",6,150,9,0,2,0,0,0.005,0.025,0,0,14,12,snack
+10088343,"Noble Jerky Teriyaki Vegan Jerky, Teriyaki",6,130,2,0,7,0,0,0,0.51,2,0,13,13,snack
+10088410,"Rip Van Snickerdoodle Wafels, Snickerdoodle",6,120,6,19,1,3,0,0.01,0.085,6,0,3,3,bread
+10088444,"Ona Coconut Shortbread Cookies, Coconut Shortbread",6,260,17,0,4,0,0,0,0.1,0,0,22,22,snack
+10088422,"Partake Birthday Cake Crunchy Cookies, Birthday Cake",6,140,7,0,1,0,0,0,0.115,1,0,8,8,dessert
+10088509,Schar Shortbread Cookies,6,140,3,26,1,0,0,0.005,0.07,1,0,6,6,snack
+10088562,"Naked Rainbow Machine Flavored Blend, Rainbow Machine",6,250,0,60,2,0,0,0,0.02,6,0,50,0,beverage
+10088731,"Sir Inkwell's Blood Orange & Mango Adaptogen Yerba Mate, Blood Orange & Mango",6,80,0,16,0,0,0,0,0,0,0,14,14,beverage
+10043238,"Thelma's Vanilla Ice Cream With Mini Snickerdoodle Cookies Sandwiches, Vanilla",7,210,9,29,3,5,0,0.03,0.12,1,0,18,18,ice cream
+10043302,Town House Original Delicious & Buttery Dippers Baked Snack Crackers,7,70,3,8,1,0,0,0,0.115,0,1,1,1,snack
+10043359,"Too Good Gourmet Keto Mini Bites Snickerdoodle Cookies, Snickerdoodle",7,70,6,5,2,2,0,0.01,0.06,2,0,0,0,snack
+10043360,"Toogoodgourmet Chocolate Chip Skillet and Cookie Mix, Chocolate Chip",7,110,2,23,1,1,0,0,0.03,1,0,13,13,snack
+10043364,"Tony's Traditional Breakfast Links Premium Handcrafted Breakfast Sausage, Traditional",7,170,14,2,10,5,0,0.04,0.44,0,0,1,0,sausage
+10043378,"Tony's Fresh Market Honey Cheddar Wisconsin Mix, Honey Cheddar",7,174,12,0,5,0,0,0,0.28800000000000000,0,0,0,0,cheese
+10043384,"Tirat Zvi Honey Glazed Turkey Breast Thinnies, Honey Glazed",7,50,0,2,9,0,0,0.02,0.41000000000000000,0,0,0,0,meats
+10043396,"Tipperary Smooth & Mild Irish Castle Cheese, Smooth & Mild",7,110,9,0,7,6,0,0.025,0.26,0,0,0,0,cheese
+10043404,"Tillamook Toasted Coconut Gelato, Chocolate Fudge & Coconut Flakes, Toasted Coconut",7,390,20,0,5,11,0,0.035,0.13,2,0,33,33,snack
+10043487,Trolli Sour Brite Sour Gummi Candy Trees,7,100,0,23,1,0,0,0,0.035,0,0,13,13,snack
+10043647,Unger's Premium Mini Dessert Shells,7,80,5,7,1,2,0,0,0.025,0,0,1,1,dessert
+10043654,"Undercover Milk Chocolate + Sprinkles Chocolate Quinoa Crisps Snack, Milk Chocolate + Sprinkles",7,130,6,20,2,3,0,0.005,0.015,1,0,9,9,snack
+10043698,Two Bite Coconut Macaroons,7,130,8,16,1,7,0,0,0.03,2,0,13,13,snack
+10043717,"Tuscanini Yellowfin Tuna Ventresca in Olive Oil, Yellowfin",7,290,20,0,27,0,0,0,0.49,0,0,0,0,meats
+10043731,"Unbranded Lemon Cake, 20 Oz",7,170,6,27,2,1,0,0.035,0.25,0,17,17,17,dessert
+10043757,"Utz Italian Hoagie Flavored Potato Chips, Italian Hoagie",7,150,9,15,2,2,0,0,0.35000000000000000,1,0,0.5,0,snack
+10043777,Utz 8.5 Oz Utz Wavy Heluva Good!ç° Buttermilk Ranch Potato Chips,7,150,10,15,2,2,0,0,0.27,1,1,1,0,snack
+10044530,Wellshire Sugar Free Dry Rubbed Uncured Bacon Ends & Pieces,7,60,5,0,4,2,0,0.01,0.15,0,0,0,0,meats
+10060382,"Best Choice Extra Creamy Whipped Topping, Extra Creamy",7,30,2,2,0,2,0,0,0,0,0,2.4,2.4,cream
+10060384,"Best Choice French Onion Dip, French Onion",7,60,6,0,1,0,0,0.015,0.21,0,0,1,0,sauce
+10060447,Ben & Jerry's Lights! Caramel! Action! Non Dairy Vanilla Frozen Dessert,7,370,18,51,2,11,0,0,0.17,1,33,32,32,dessert
+10060639,"Big Win Korean Bbq Style Pork Jerky, Korean Bbq Style",7,80,2,0,8,0,0,0.025,0.39,0,0,7,7,meats
+10060657,"Big Hunk Chewy Honey Sweetened Nougat With Whole Roasted Peanuts Bars, Chewy Honey Sweetened Nougat With Whole Roasted Peanuts",7,230,3,0,3,1,0,0,0.15,1,0,23,23,snack
+10060764,Black Bear Crumbled Blue Cheese,7,100,8,0,6,0,0,0,0.38,0,0,0.5,0.5,cheese
+10060818,"Blue Bunny Chocolate Ice Cream, Super Fudge Brownie",7,230,11,0,3,7,0,0.02,0.055,1,0,25.7,25.7,ice cream
+10060851,Birds Eye Voila! Cheesy Chicken,7,270,7,36,14,3,0,0.03,0.9400000000000000,3,0,6.5,0,meals
+10061371,"Brigham's Chocolate Avalanche Ice Cream With Brownie Pieces and Cookie Crumble Swirl, Chocolate Avalanche",7,320,20,33,4,10,0.5,0.055,0.125,2,0,26,26,ice cream
+10061399,"Bubbies Brownie Batter Edible Cookie Dough With Peanut Butter Ice Cream Bites, Brownie Batter",7,130,7,16,2,4,0,15,0.075,1,0,8,7,ice cream
+10061456,By the Way Bakery Brownie Bites,7,190,8,30,2,3,0,0.025,0.07,1,0,20,20,dessert
+10061495,Ben & Jerry's Half Baked Ice Cream,7,370,19,45,6,12,0.5,0.065,0.12,2,37,37,31,ice cream
+10062457,Earthbound Farm Organic Sweetened Dried Cranberries,7,140,0,36,0,0,0,0,0,2,31,31,31,fruit
+10062497,"Bristol Farms Grapefruit Organic Italian Soda, Grapefruit",7,150,0,0,0,0,0,0,0.035,0,0,37,37,beverage
+10062514,"Heinen's Organic Mango Lemonade, Mango",7,140,0,36,0,0,0,0,0.005,0,0,36,36,beverage
+10062599,Jelly Belly Light & Sound Talker Organic Candy Jelly Beans,7,35,0,0,0,0,0,0,0,0,0,7,7,snack
+10062620,"Runamok Maple Maple Vermont Organic Syrup, Maple",7,110,0,27,0,0,0,0,0.005,0,0,24,24,syrup
+10062698,"O Organics Organic Lemonade Iced Tea, Lemonade",7,160,0,41,0,0,0,0,0.01,0,0,39,0,beverage
+10062713,"O Organics Flavored Organic Italian Soda, Pomegranate",7,190,0,0,0,0,0,0,0.055,0,0,21.5,20,beverage
+10063007,"Food Lion Ketchup, Tomato",7,20,0,5,0,0,0,0,0.16,0,0,4,4,sauce
+10027882,"Unbranded Old Fashioned Chocolate Chip Cookie Pie, 3 Oz",8,410,27,39,3,14,0,0.045,0.24,1,21,21,21,dessert
+10027894,"Unbranded Apple Strip Danish, 14 Oz",8,160,7,23,2,3,0,0.015,0.19,0,11,10,10,dessert
+10027918,"Two Bite Scones, Blueberry",8,230,10,32,3,4,0,0.02,0.17,1,0,15,15,dessert
+10027921,"Two Bite Pumpkin Muffins, Pumpkin",8,480,24,61,5,4,0,0.035,0.28,2,0,35.4,34.3,bread
+10028279,"Waialua Soda Works Mango Natural Soda, Mango",8,140,0,35,0,0,0,0,0,0,35,35,35,beverage
+10029772,"Salutti Aloe Drink, 50.7 Fl Oz",8,190,0,47,0,0,0,0,0.065,0,45,36.3,36.3,beverage
+10029890,"Saucy Mama Honey Barbecue Wing Sauce, Honey Barbecue",8,25,0,5,0,0,0,0,0.215,0,5,5.6,5.6,sauce
+10040046,"Brisk Iced Tea, Apple Cider",8,60,0,16,0,0,0,0,0.12,0,16,16,16,beverage
+10040274,"Carmine's Bakery New York Style Cheesecake, 2 Lb 8 Oz",8,360,22,36,4,11,0,0.055,0.26,1,22,20,20,dessert
+10040645,Chips Ahoy! Frozen Dairy Dessert,8,180,7,30,1,4,0,0.005,0.08,1,0,20,20,ice cream
+10041429,"Drumstick Crushed It! Cookies & Cream Frozen Dairy Dessert Cones, Cookies & Cream",8,280,13,38,3,9,0,0,0.12,1,24,27,27,ice cream
+10152680,"Quest Peanut Butter Cups, Peanut Butter",3.5,200,15,0,11,0,0,0,0.125,0,0,0.5,0.5,dessert
+10152797,"Overt Tuna Power Lemon Tuna Salad With Greens, Cucumber & House Made Peanut Dressing, Tuna",3.5,220,12,10,21,2,0,0.02,0.34,4,4,4,4,salad
+10172707,Wixter Seafood Ecuadorian Mahi Mahi,1.5,150,2,0,32,0,0,0.12,0.15,0,0,0,0,meats
+10172708,"Wixter Seafood New Zealand Half Shell Mussels, 2 Lb",1.5,100,1,5,18,1,0,0.065,0.36,0,0,0,0,meats
+10172424,True Harvest Crispy Leaf Hydroponic Lettuce,1.5,5,0,1,0,0,0,0,0.01,0,0,0,0,vegetable
+10172423,True Blue Farms Premium Blueberries,1.5,79,1,18,0,0,0,0,0.001,4,0,14.3,0,fruit
+10023447,"Best Choice Apple Cobbler, Apple",9,200,3,41,2,1,0,0.015,0.22,1,0,36.3,36.3,sauce
+10023530,"Best Choice Zesty Cocktail Sauce, Zesty Cocktail",9,70,0,0,1,0,0,0,0.66,0,0,13,13,sauce
+10023532,"Best Choice Vanilla Flavored Wafers, Vanilla",9,130,3,24,1,1,0,0,0.105,1,0,11,11,dessert
+10023928,"Cake Craft White Fondant, White",9,130,1,32,0,0,0,0,0.02,0,0,28,28,ingredient
+10009887,Kimberley's Bakeshoppe Halloween Cupcakes,10,220,11,28,1,3,0,0.015,0.16,0,0,22,22,dessert
+10009937,"Kimberley's Bakeshoppe Vanilla Frosted Soft Sugar Cookies, Vanilla",10,160,6,25,1,1,0,0.01,0.065,0,0,15,15,Dessert
+10009969,Kum & Go Whole Thin Crust 2 Topping Pizza,10,2113,134,131,96,61,3,0.329,,13,9,12,12,meals
+10010429,Marinela Butter Cookies,10,150,8,18,1,2,0,0.005,0.07,0,0,6,6,dessert
+10010462,"Market Pantry Chocolate Mini Cupcakes, Chocolate",10,300,15,40,2,5,0,0.02,0.2,1,0,32,32,dessert
+10010599,Marketside Sugar Cookies,10,110,4,0,1,0,0,0.005,0.025,0,0,8,8,dessert
+10010609,Marketside Red Velvet Cupcakes,10,350,20,41,3,7,0,0.03,0.22,1,0,31.7,31.7,dessert
+10012913,Gallo Salame Pepperoni,10,110,10,0,6,3,0,0.03,0.49,0,0,0,0,meats
+10013066,"Harry & David Moose Munch Dark Chocolate Peppermint Bark Flavored Premium Popcorn, Dark Chocolate Peppermint Bark",10,150,7,22,1,3,0,0.01,0.1,2,0,13,13,snack

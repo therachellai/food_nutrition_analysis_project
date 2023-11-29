@@ -1,5 +1,5 @@
 import openai
-from CollectData import read_text
+from CollectDataForTarget.CollectData import read_text
 from dotenv import load_dotenv
 import os
 

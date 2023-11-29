@@ -14,7 +14,6 @@ def calculate_fitness_goal(df: pd.DataFrame) -> dict:
     """
     
     total = len(df)
-    lose_weight = df['Q5'].apply(lambda x: 'Lose weight' in x).sum()
     lose_weight = df['Q5'].apply(lambda x: 'Lose weight' in x).sum() / total * 100
     gain_weight = df['Q5'].apply(lambda x: 'Gain weight' in x).sum() / total * 100
     maintain_weight = df['Q5'].apply(lambda x: 'Maintain weight' in x).sum() / total * 100
