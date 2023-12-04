@@ -3,6 +3,7 @@ from PIL import Image
 from CollectDataForTarget.CollectData import *
 from Model.LinRegModel import *
 from Model.DTRegressor import *
+from Model.LangModel import *
 
 def main():
     
@@ -86,6 +87,9 @@ def main():
 
     ########################################################## 
     """ This is the space for implementing the language model """
+    lang_model = LanguageModel()
+    lang_score = lang_model.language_model_ingredients(uploaded_file)
+    st.write(f"language_score: {lang_score}")
     ##########################################################
 
     if predicted_score < 3:
