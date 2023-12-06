@@ -86,17 +86,21 @@ def main():
     st.write(f"*{predicted_score}*")
 
     ########################################################## 
-    
-    """ This is the space for implementing the language model """
+        
     lang_model = LanguageModel()
-    lang_score = lang_model.language_model_ingredients(uploaded_file)
-    st.write(f"language_score: {lang_score}")
+    lang_score = int(lang_model.language_model_ingredients(uploaded_file))
+    st.subheader('From the Language Model:')
+    st.write(f"*{lang_score}*")
     
     ##########################################################
+    predicted_score = (predicted_score + lang_score) / 2
     
-    if predicted_score <= 4:
+    st.subheader('Taking the Average of Scores from Both Models:')
+    st.write(f"*{predicted_score}*")
+    
+    if predicted_score <= 3:
         st.write('This food is great. Nice choice!')
-    elif predicted_score <= 6 and predicted_score > 4:
+    elif predicted_score <= 6 and predicted_score > 3:
         st.write('This food is fine. You can consume it as is. However, here are a few options:')
         category_value = converted_df['category'][0]
         recommendation_dataset = data_for_model_training[data_for_model_training['category'] == category_value]
