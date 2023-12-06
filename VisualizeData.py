@@ -18,7 +18,7 @@ def main():
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded Photo', use_column_width=True)
         
-    if st.button('Read Text'):
+    if st.button('Analyze Food Label'):
         try:
             text_result = read_text(image)
             
@@ -82,34 +82,42 @@ def main():
 
     predicted_score = linear_model.model.predict(converted_df.drop('category', axis=1))[0]
     st.header('Estimated Score')
-    st.subheader('From the Linear Regression Model')
+    st.subheader('From the Linear Regression Model:')
     st.write(f"*{predicted_score}*")
 
     ########################################################## 
+    
     """ This is the space for implementing the language model """
     lang_model = LanguageModel()
     lang_score = lang_model.language_model_ingredients(uploaded_file)
     st.write(f"language_score: {lang_score}")
+    
     ##########################################################
-
-    if predicted_score < 3:
+    
+    if predicted_score <= 4:
         st.write('This food is great. Nice choice!')
-    elif predicted_score < 5 and predicted_score >= 3:
+    elif predicted_score <= 6 and predicted_score > 4:
         st.write('This food is fine. You can consume it as is. However, here are a few options:')
+        category_value = converted_df['category'][0]
+        recommendation_dataset = data_for_model_training[data_for_model_training['category'] == category_value]
+        recommendation_dataset = recommendation_dataset.sort_values('Score', ascending=True)
+        first_recommendation = recommendation_dataset.iloc[0]
+        second_recommendation = recommendation_dataset.iloc[1]
+        recommendations = [first_recommendation, second_recommendation]
+        recommendations = [df for df in recommendations if df['Score'].max() < 6]
+        for df in recommendations:
+            st.write(df)
     else:
         st.write('This food is not good for your health. Please take a look at healthier options:')
-    
-    ##########################################################
-    """ This is the space for generating options which share the same category but have the lowest three scores """
-    ##########################################################
-    
-    ##########################################################
-    """ This is the space for generating plots that compare nutrition of current food with suggested food """
-    ##########################################################
-    
-    ##########################################################
-    """ This is the space for pasting the charts from user analysis """
-    ##########################################################
+        category_value = converted_df['category'][0]
+        recommendation_dataset = data_for_model_training[data_for_model_training['category'] == category_value]
+        recommendation_dataset = recommendation_dataset.sort_values('Score', ascending=True)
+        first_recommendation = recommendation_dataset.iloc[0]
+        second_recommendation = recommendation_dataset.iloc[1]
+        recommendations = [first_recommendation, second_recommendation]
+        recommendations = [df for df in recommendations if df['Score'].max() < 6]
+        for df in recommendations:
+            st.write(df)
     
 if __name__ == '__main__':
     main()
