@@ -4,6 +4,14 @@ from CollectDataForTarget.CollectData import *
 from Model.LinRegModel import *
 from Model.DTRegressor import *
 from Model.LangModel import *
+import re
+
+def extract_integer_from_string(input_string):
+    match = re.search(r'\b\d+\b', input_string)
+    if match:
+        return int(match.group())
+    else:
+        return None
 
 def main():
     
@@ -88,7 +96,8 @@ def main():
     ########################################################## 
         
     lang_model = LanguageModel()
-    lang_score = int(lang_model.language_model_ingredients(uploaded_file))
+    score = lang_model.language_model_ingredients(uploaded_file)
+    lang_score = extract_integer_from_string(score)
     st.subheader('From the Language Model:')
     st.write(f"*{lang_score}*")
     
